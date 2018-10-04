@@ -1,0 +1,18 @@
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <script src="/static-assets/js/index.js" type="text/javascript"></script>
+    <script>
+        (function () {
+            const port = 'ws://localhost:{{ port }}';
+            const socket = new WebSocket(port);
+            // Listen for messages
+            socket.addEventListener('message', function (event) {
+                if (event.data === 'reload') {
+                    window.location.href = window.location.href;
+                }
+            });
+        })();
+    </script>
+</head>
