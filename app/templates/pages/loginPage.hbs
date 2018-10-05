@@ -1,0 +1,25 @@
+{{> html/start title="Main page" settings=settings }}
+
+<main>
+  <div class="container">
+    <section class="declaration">
+      <h1 class="declaration__title">Organize Your Job Search</h1>
+    </section>
+    <section class="login">
+      <div class="login__container">
+        <h2 class="login__title">Log in</h2>
+        <form action="POST" class="login__form">
+          <label for="login" class="login__label">
+            <input id="login" type="text" class="login__input login__input--login">
+          </label>
+        <label for="password" class="login__label">
+          <input id="password" type="password" class="login__input login__input--password">
+        </label>
+        <button class="login__btn">LOG IN</button>
+      </form>
+      </div>
+    </section>
+  </div>
+</main>
+
+{{> html/end }}
