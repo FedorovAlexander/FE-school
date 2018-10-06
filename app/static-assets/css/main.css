@@ -8,15 +8,15 @@ body {
 }
 
 .login-page-header {
-  background: #00aa87;
   font-size: 1.5rem;
+  background: #006e7f;
   color: #fff;
   font-weight: 700;
   text-align: center;
 }
 
 .login-page-wrapper {
-  background: #00aa87;
+  background: #006e7f;
   min-height: 100vh;
 }
 
