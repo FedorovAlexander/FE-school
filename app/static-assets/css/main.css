@@ -74,3 +74,14 @@ body {
 .login__label {
   margin-bottom: 1rem;
 }
+
+.login__input {
+  font-size: 1.25rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: none;
+}
