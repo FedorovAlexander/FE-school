@@ -85,3 +85,12 @@ body {
   padding-right: 1rem;
   border: none;
 }
+
+.login__btn {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #006e7f;
+  padding-top: 0.213rem;
+  padding-bottom: 0.213rem;
+  border: none;
+}
