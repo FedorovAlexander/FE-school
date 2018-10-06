@@ -58,3 +58,8 @@ body {
   width: 100%;
   margin-top: 1.5rem;
 }
+
+.login__title {
+  margin-bottom: 3rem;
+  text-align: left;
+}
