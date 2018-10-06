@@ -39,6 +39,7 @@ body {
 }
 
 .declaration {
+  padding-top: 6.5rem;
   vertical-align: middle;
   min-height: 100%;
   display: flex;
