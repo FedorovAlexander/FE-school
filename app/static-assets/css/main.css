@@ -8,11 +8,14 @@ body {
 }
 
 .login-page-header {
-  font-size: 1.5rem;
   background: #006e7f;
+  font-size: 1.75rem;
   color: #fff;
   font-weight: 700;
   text-align: center;
+  padding-top: 0.5rem;
+  position: fixed;
+  width: 100%;
 }
 
 .login-page-wrapper {
@@ -25,7 +28,6 @@ body {
   padding-left: 0.625rem;
   padding-right: 0.625rem;
   margin: 0 auto;
-  height: inherit;
 }
 
 .login-page-container {
