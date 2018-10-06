@@ -70,3 +70,7 @@ body {
   min-height: 10rem;
   width: 100%;
 }
+
+.login__label {
+  margin-bottom: 1rem;
+}
