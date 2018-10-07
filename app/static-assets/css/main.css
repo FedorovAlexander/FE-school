@@ -104,6 +104,8 @@ body {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   border: none;
+  background-color: buttonface;
+  text-decoration: none;
 }
 
 @media (min-width: 680px) {
