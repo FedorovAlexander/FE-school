@@ -33,7 +33,7 @@ body {
 
 .login-page-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
   min-height: 100%;
