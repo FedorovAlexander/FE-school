@@ -37,6 +37,13 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   min-height: 100%;
+  align-items: center;
+  align-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  box-sizing: border-box;
 }
 
 .declaration {
