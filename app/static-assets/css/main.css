@@ -48,8 +48,6 @@ body {
 
 .declaration {
   padding-top: 7.5rem;
-  vertical-align: middle;
-  min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
