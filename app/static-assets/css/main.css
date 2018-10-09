@@ -143,6 +143,15 @@ body {
   text-align: center;
 }
 
+.page-header__chart-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: absolute;
+  right: 1rem;
+  top: 0.27rem;
+}
+
 @media (min-width: 680px) {
   .login-page-container {
     flex-direction: row;
