@@ -139,6 +139,11 @@ body {
   right: 2rem;
   top: 0.3rem;
 }
+
+.page-header__logo{
+  width: 100%;
+  text-align: center;
+}
 .page-header__logo-link {
   color: #fff;
   text-decoration: none;
