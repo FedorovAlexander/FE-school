@@ -187,4 +187,12 @@ body {
     padding-right: 3rem;
   }
 
+  .page-header__chart-link-text {
+    display: block;
+  }
+  .page-header__img {
+    position: absolute;
+    left: -0.75rem;
+    visibility: visible;
+  }
 }
