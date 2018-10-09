@@ -134,6 +134,11 @@ body {
   position: relative;
 }
 
+.page-header__chart-link-block {
+  position: absolute;
+  right: 2rem;
+  top: 0.3rem;
+}
 .page-header__logo-link {
   color: #fff;
   text-decoration: none;
