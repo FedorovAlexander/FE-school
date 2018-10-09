@@ -162,19 +162,29 @@ body {
   left: -0.75rem;
 }
 
+.page-header__chart-link-text {
+  margin: 0;
+  padding-left: 10px;
+  display: none;
+}
+
 @media (min-width: 680px) {
+
   .login-page-container {
     flex-direction: row;
   }
+
   .declaration {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 0;
   }
+
   .login {
     max-width: 20rem;
     flex: 1;
     padding-left: 3rem;
     padding-right: 3rem;
   }
+
 }
