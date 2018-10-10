@@ -130,7 +130,6 @@ body {
   display: flex;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  position: fixed;
   width: 100%;
   z-index: 100;
 }
