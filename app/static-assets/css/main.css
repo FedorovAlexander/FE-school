@@ -175,6 +175,12 @@ body {
   display: none;
 }
 
+/* chart page */
+
+.chart-page__container {
+  margin-top: 1rem;
+}
+
 /* media  queries*/
 
 @media (min-width: 680px) {
