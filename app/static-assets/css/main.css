@@ -191,7 +191,7 @@ body {
 
 .chart {
   margin-top: 0;
-  border: 1px solid lightgrey;
+}
 
 .position-badge {
   display: block;
