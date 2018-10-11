@@ -4,6 +4,7 @@ var db = {
       "name": "Umbrella Corp",
       "description": "The Umbrella Corporation is an international pharmaceutical company.",
       "vacancies": [{
+          "companyName": "Umbrella Corp",
           "position": "Evil Scientist",
           "salary": "$200000/year",
           "minutes": 480,
@@ -14,6 +15,7 @@ var db = {
           "status": "candidate"
         },
         {
+          "companyName": "Umbrella Corp",
           "position": "Zombie Bites Tester",
           "salary": "$1000000/year",
           "minutes": 10,
@@ -24,6 +26,7 @@ var db = {
           "status": "not interested"
         },
         {
+          "companyName": "Umbrella Corp",
           "position": "Zombie Killing Squad Member",
           "salary": "$150000/year",
           "minutes": 600,
@@ -36,9 +39,10 @@ var db = {
       ]
     },
     {
-      "name": "ACME Corp",
+      "companyName": "ACME Corp",
       "description": "A Company Manufacturing Everything.",
       "vacancies": [{
+          "companyName": "ACME Corp",
           "position": "Tennis Ball Bomb Maker",
           "salary": "$80000/year",
           "minutes": 540,
@@ -49,6 +53,7 @@ var db = {
           "status": "offer"
         },
         {
+          "companyName": "ACME Corp",
           "position": "Rocket Scientist",
           "salary": "$250000",
           "minutes": 540,
@@ -59,6 +64,7 @@ var db = {
           "status": "candidate"
         },
         {
+          "companyName": "ACME Corp",
           "position": "Wile E. Coyote Personal Doctor",
           "salary": "$60000",
           "minutes": 420,
@@ -74,6 +80,7 @@ var db = {
       "name": "Tyrell Corp",
       "description": "The Tyrell Corporation is a powerful corporation based in Los Angeles in the year AF 19. Tyrell is named after its founder Eldon Tyrell and is a high-tech corporation primarily concerned with the production of androids known as replicants.",
       "vacancies": [{
+          "companyName": "Tyrell Corp",
           "position": "Bladerunner",
           "salary": "$156000/year",
           "minutes": 680,
@@ -84,6 +91,7 @@ var db = {
           "status": "offer"
         },
         {
+          "companyName": "Tyrell Corp",
           "position": "Android Test Manager",
           "salary": "$115000/year",
           "minutes": 720,
