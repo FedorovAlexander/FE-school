@@ -106,5 +106,18 @@ var db = {
   ]
 }
 
-
-console.log(db.companies[0].description)
+function chart() {
+  var companies = db.companies;
+  var chart = document.querySelector('.chart');
+  companies.forEach(function(item) {
+    var vacancy = item.vacancies;
+    vacancy.forEach(function(vac) {
+      return chart.innerHTML += '<div class="position">' +
+        '<a href="#">' + vac.position + '</a>' +
+        '<p class="position__company">' + vac.companyName + '</p>' +
+        '<span>' + vac.salary + '</span>'
+      '</div>';
+    })
+  })
+}
+chart();
