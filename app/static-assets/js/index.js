@@ -12,7 +12,8 @@ var db = {
           "interesting": true,
           "demandEducation": true,
           "comment": null,
-          "status": "candidate"
+          "status": "candidate",
+          "link": "./evilScientist"
         },
         {
           "companyName": "Umbrella Corp",
@@ -23,7 +24,8 @@ var db = {
           "interesting": false,
           "demandEducation": false,
           "comment": null,
-          "status": "not interested"
+          "status": "not interested",
+          "link": "./zombieBitesTester"
         },
         {
           "companyName": "Umbrella Corp",
@@ -34,7 +36,8 @@ var db = {
           "interesting": true,
           "demandEducation": true,
           "comment": null,
-          "status": "denied"
+          "status": "denied",
+          "link": "./zombieKillingSquadMember"
         }
       ]
     },
@@ -50,7 +53,8 @@ var db = {
           "interesting": false,
           "demandEducation": false,
           "comment": null,
-          "status": "offer"
+          "status": "offer",
+          "link": "./tennisBallBombMaker"
         },
         {
           "companyName": "ACME Corp",
@@ -61,7 +65,8 @@ var db = {
           "interesting": true,
           "demandEducation": true,
           "comment": null,
-          "status": "candidate"
+          "status": "candidate",
+          "link": "./rocketScientist"
         },
         {
           "companyName": "ACME Corp",
@@ -72,7 +77,8 @@ var db = {
           "interesting": false,
           "demandEducation": true,
           "comment": null,
-          "status": "not interested"
+          "status": "not interested",
+          "link": "./personalDoctor"
         }
       ]
     },
@@ -88,7 +94,8 @@ var db = {
           "interesting": true,
           "demandEducation": false,
           "comment": null,
-          "status": "offer"
+          "status": "offer",
+          "link": "./bladerunner"
         },
         {
           "companyName": "Tyrell Corp",
@@ -99,7 +106,8 @@ var db = {
           "interesting": false,
           "demandEducation": false,
           "comment": null,
-          "status": "denied"
+          "status": "denied",
+          "link": "./testManager"
         }
       ]
     }
