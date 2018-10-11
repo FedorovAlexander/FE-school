@@ -182,9 +182,7 @@ body {
 }
 
 .filters {
-  border: 1px solid lightgrey;
-  border-radius: 3px;
-  box-shadow: 0 0 3px grey;
+
 }
 
 .filters__title {
