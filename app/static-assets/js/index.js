@@ -120,11 +120,11 @@ function chart() {
   companies.forEach(function(item) {
     var vacancy = item.vacancies;
     vacancy.forEach(function(vac) {
-      return chart.innerHTML += '<div class="position">' +
-        '<a href="#">' + vac.position + '</a>' +
-        '<p class="position__company">' + vac.companyName + '</p>' +
-        '<span>' + vac.salary + '</span>'
-      '</div>';
+      return chart.innerHTML += '<a href="' + vac.link + '" class="position-badge">' +
+        '<p href="#" class="position-badge__name">' + vac.position + '</p>' +
+        '<p class="position-badge__company">' + vac.companyName + '</p>' +
+        '<span position-badge__salary>' + vac.salary + '</span>'
+      '</a>';
     })
   })
 }
