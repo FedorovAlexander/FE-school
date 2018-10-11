@@ -206,6 +206,14 @@ body {
   color: #2f3234;
   padding: 0.5rem;  
 }
+.position-badge:hover {
+  transform: scale(1.01);
+  transition: 0.05s linear;
+}
+.position-badge__name {
+  font-size: 1.375rem;
+  margin: 0;
+}
 
 /* media  queries*/
 
