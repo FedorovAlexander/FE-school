@@ -181,6 +181,11 @@ body {
   margin-top: 1rem;
 }
 
+.filters {
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  box-shadow: 0 0 3px grey;
+}
 /* media  queries*/
 
 @media (min-width: 680px) {
