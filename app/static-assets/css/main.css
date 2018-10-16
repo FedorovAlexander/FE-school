@@ -202,6 +202,10 @@ body {
   padding-right: 1rem;
 }
 
+.chart__title {
+  color: #2f3234;
+}
+
 /* position badge */
 
 .position-badge {
