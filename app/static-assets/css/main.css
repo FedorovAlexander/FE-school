@@ -238,6 +238,10 @@ body {
   color: #006e7f;
   transition: 0.05s linear;
 }
+.position-badge__name:hover {
+  color: #006e7f;
+  transition: 0.05s linear;
+}
 
 .position-badge__name:active {
   color: #ff9180;
