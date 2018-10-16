@@ -208,7 +208,10 @@ body {
   text-decoration: none;
   color: #2f3234;
   padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
+
 .position-badge:hover {
   transform: scale(1.01);
   transition: 0.05s linear;
