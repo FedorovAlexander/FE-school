@@ -189,7 +189,9 @@ body {
 }
 
 .filters__title {
-  margin-top: 0;
+  color: #2f3234;
+  width: 100%;
+  max-width: 40rem;
 }
 
 .chart {
