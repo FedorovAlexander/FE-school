@@ -50,7 +50,7 @@
         },
         {
           "position": "Rocket Scientist",
-          "salary": "$250000",
+          "salary": "$250000/year",
           "minutes": 540,
           "roadTime": 65,
           "interesting": true,
@@ -60,7 +60,7 @@
         },
         {
           "position": "Wile E. Coyote Personal Doctor",
-          "salary": "$60000",
+          "salary": "$60000/year",
           "minutes": 420,
           "roadTime": 70,
           "interesting": false,

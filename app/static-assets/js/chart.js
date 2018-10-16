@@ -55,7 +55,7 @@ var db = {
         {
           "companyName": "ACME Corp",
           "position": "Rocket Scientist",
-          "salary": "$250000",
+          "salary": "$250000/year",
           "minutes": 540,
           "roadTime": 65,
           "interesting": true,
@@ -66,7 +66,7 @@ var db = {
         {
           "companyName": "ACME Corp",
           "position": "Wile E. Coyote Personal Doctor",
-          "salary": "$60000",
+          "salary": "$60000/year",
           "minutes": 420,
           "roadTime": 70,
           "interesting": false,
