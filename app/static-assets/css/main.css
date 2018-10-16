@@ -288,9 +288,16 @@ body {
   .page-header__chart-link-text {
     display: block;
   }
+  
   .page-header__img {
     position: absolute;
     left: -0.75rem;
     visibility: visible;
+  }
+
+  .chart {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
