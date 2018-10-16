@@ -235,6 +235,22 @@ body {
   transition: 0.05s linear;
 
 }
+
+.position-badge__company {
+  text-decoration: none;
+  color: #2f3234;
+}
+
+.position-badge__company:hover {
+  color: #006e7f;
+  transition: 0.05s linear;
+}
+
+.position-badge__company:active {
+  color: #ff9180;
+  transition: 0.05s linear;
+}
+
 /* media  queries*/
 
 @media (min-width: 680px) {
