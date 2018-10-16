@@ -219,8 +219,22 @@ body {
 .position-badge__name {
   font-size: 1.375rem;
   margin: 0;
+  text-decoration: none;
+  color: #2f3234;
+  display: block;
+  margin-bottom: 1rem;
 }
 
+.position-badge__name:hover {
+  color: #006e7f;
+  transition: 0.05s linear;
+}
+
+.position-badge__name:active {
+  color: #ff9180;
+  transition: 0.05s linear;
+
+}
 /* media  queries*/
 
 @media (min-width: 680px) {
