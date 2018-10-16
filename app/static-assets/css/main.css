@@ -231,6 +231,7 @@ body {
   color: #2f3234;
   display: block;
   margin-bottom: 1rem;
+  padding-right: 1rem;
 }
 
 .position-badge__name:hover {
