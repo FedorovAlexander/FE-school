@@ -193,8 +193,11 @@ body {
   margin-top: 0;
 }
 
+/* position badge */
+
 .position-badge {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   max-width: 40rem;
   border: 1px solid #d3d3d3;
   border-radius: 3px;
@@ -204,7 +207,7 @@ body {
   transition: 0.05s linear;
   text-decoration: none;
   color: #2f3234;
-  padding: 0.5rem;  
+  padding: 0.5rem;
 }
 .position-badge:hover {
   transform: scale(1.01);
