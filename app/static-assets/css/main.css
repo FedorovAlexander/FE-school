@@ -206,6 +206,8 @@ body {
 
 .chart__title {
   color: #2f3234;
+  width: 100%;
+  max-width: 40rem;
 }
 
 /* position badge */
