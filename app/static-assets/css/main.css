@@ -191,6 +191,8 @@ body {
 .filters__title {
   color: #2f3234;
   max-width: 40rem;
+  padding-right: 0rem;
+  padding-left: 0rem;
 }
 
 .chart {
@@ -308,17 +310,5 @@ body {
     width: 100%;
     padding-right: 0;
     padding-left: 0;
-  }
-
-  .filters {
-    width: 100%;
-    padding-right: 0rem;
-    padding-left: 0rem;
-  }
-
-  filters__title {
-    max-width: 20rem;
-    padding-right: 0rem;
-    padding-left: 0rem;
   }
 }
