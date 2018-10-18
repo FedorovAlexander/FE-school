@@ -193,7 +193,7 @@ body {
   color: #2f3234;
   max-width: 40rem;
   padding-right: 0rem;
-  padding-left: 0rem;
+  padding-left: 1rem;
 }
 
 .filters__buttons {
@@ -236,6 +236,7 @@ body {
   color: #2f3234;
   width: 100%;
   max-width: 40rem;
+  padding-left: 2rem;
 }
 
 /* position badges */
