@@ -122,6 +122,7 @@ body {
 /* page header */
 
 .page-header {
+  position: fixed;
   background-color: #006e7f;
   color: #fff;
   font-weight: 700;
