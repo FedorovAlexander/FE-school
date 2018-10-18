@@ -166,7 +166,7 @@ body {
 
 .page-header__img {
   position: absolute;
-  left: -0.75rem;
+  left: 0;
 }
 
 .page-header__chart-link-text {
