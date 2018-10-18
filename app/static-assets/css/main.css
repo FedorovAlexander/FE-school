@@ -202,6 +202,27 @@ body {
   flex-wrap: wrap;
   padding-left: 0;
 }
+
+.filters__buttons-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border: 1px solid #fff;
+  flex: 1;
+  background-color: #dcdcdc;
+  text-align: center;
+  color: #fff;
+  padding: 0.25rem;
+  width: 19%;
+  min-width: 5.25rem;
+}
+
+.filters__buttons-item--active {
+  background-color: #006e7f;
+}
+
 .chart {
   margin-top: 0;
   display: flex;
