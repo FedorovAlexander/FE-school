@@ -195,6 +195,13 @@ body {
   padding-left: 0rem;
 }
 
+.filters__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
 .chart {
   margin-top: 0;
   display: flex;
