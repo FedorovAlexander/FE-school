@@ -183,8 +183,9 @@ body {
 
 .filters {
   max-width: 40rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .filters__title {
