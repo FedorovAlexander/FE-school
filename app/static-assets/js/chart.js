@@ -5,9 +5,9 @@ fetch('../../rest/vacancies')
   .then(() => {
     var companies = db.companies;
     var chart = document.querySelector('.chart');
-    companies.forEach(function(item) {
+    companies.forEach(item => {
       var vacancy = item.vacancies;
-      vacancy.forEach(function(vac) {
+      vacancy.forEach(vac => {
         return chart.innerHTML +=
         '<div class="position-badge">' +
           '<div class="postion-badge__links">' +
