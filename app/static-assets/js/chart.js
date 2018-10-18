@@ -4,7 +4,7 @@ fetch('../../rest/vacancies')
   .then(data => db = data)
   .then(() => {
     var companies = db.companies;
-    var chart = document.querySelector('.chart');
+    var chart = document.querySelector('.positions-block');
     companies.forEach(item => {
       var vacancy = item.vacancies;
       vacancy.forEach(vac => {
