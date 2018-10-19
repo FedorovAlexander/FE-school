@@ -216,7 +216,10 @@ body {
   background-color: #dcdcdc;
   text-align: center;
   color: #fff;
-  padding: 0.25rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
   width: 19%;
   min-width: 5.25rem;
 }
