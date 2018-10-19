@@ -10,7 +10,7 @@
           "minutes": 480,
           "roadTime": 15,
           "interesting": true,
-          "demandEducation": true,
+          "requiresEducation": true,
           "comment": null,
           "status": "candidate"
         },
@@ -21,7 +21,7 @@
           "minutes": 10,
           "roadTime": 25,
           "interesting": false,
-          "demandEducation": false,
+          "requiresEducation": false,
           "comment": null,
           "status": "not interested"
         },
@@ -32,7 +32,7 @@
           "minutes": 600,
           "roadTime": 30,
           "interesting": true,
-          "demandEducation": true,
+          "requiresEducation": true,
           "comment": null,
           "status": "denied"
         }
@@ -48,7 +48,7 @@
           "minutes": 540,
           "roadTime": 60,
           "interesting": false,
-          "demandEducation": false,
+          "requiresEducation": false,
           "comment": null,
           "status": "offer"
         },
@@ -59,7 +59,7 @@
           "minutes": 540,
           "roadTime": 65,
           "interesting": true,
-          "demandEducation": true,
+          "requiresEducation": true,
           "comment": null,
           "status": "candidate"
         },
@@ -70,7 +70,7 @@
           "minutes": 420,
           "roadTime": 70,
           "interesting": false,
-          "demandEducation": true,
+          "requiresEducation": true,
           "comment": null,
           "status": "not interested"
         }
@@ -86,7 +86,7 @@
           "minutes": 680,
           "roadTime": 40,
           "interesting": true,
-          "demandEducation": false,
+          "requiresEducation": false,
           "comment": null,
           "status": "offer"
         },
@@ -97,7 +97,7 @@
           "minutes": 720,
           "roadTime": 35,
           "interesting": false,
-          "demandEducation": false,
+          "requiresEducation": false,
           "comment": null,
           "status": "denied"
         }
