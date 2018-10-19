@@ -308,6 +308,17 @@ body {
   transition: 0.05s linear;
 }
 
+/* position page */
+
+.position-page__container {
+  padding-top: 5rem;
+}
+
+.position-info__title {
+  margin-top: 0;
+  color: #2f3234;
+}
+
 /* media  queries*/
 
 @media (min-width: 680px) {
