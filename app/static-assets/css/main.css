@@ -409,6 +409,14 @@ body {
   color: #2f3234;
 }
 
+.edit-link__img {
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-right: 0.25rem;
+
+  fill: #a9a9a9;
+}
+
 /* media  queries*/
 
 @media (min-width: 680px) {
