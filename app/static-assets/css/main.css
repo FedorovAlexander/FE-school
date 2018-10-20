@@ -435,6 +435,16 @@ body {
   color: #2f3234;
 }
 
+.conditions__list {
+  display: flex;
+  flex-direction: row;
+
+  padding-left: 0;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 /* media  queries*/
 
 @media (min-width: 680px) {
