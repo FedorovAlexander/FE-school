@@ -41,15 +41,6 @@ body {
   justify-content: center;
 }
 
-/* container */
-
-.container {
-  max-width: 42rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin: 0 auto;
-}
-
 /* login page */
 
 .login-page-container {
@@ -140,6 +131,10 @@ body {
   justify-content: space-around;
   width: 100%;
   position: relative;
+  max-width: 42rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
 }
 
 .page-header__chart-link-block {
@@ -183,6 +178,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 42rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
 }
 
 .filters {
@@ -313,8 +312,12 @@ body {
 
 /* position page */
 
-.position-page__container {
+.position-page {
   padding-top: 5rem;
+  max-width: 42rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
 }
 
 .position-info__title {
