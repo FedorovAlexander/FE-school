@@ -178,8 +178,11 @@ body {
 
 /* chart page */
 
-.chart-page__container {
+.chart-page {
   padding-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .filters {
@@ -325,6 +328,7 @@ body {
 
   .login-page-container {
     flex-direction: row;
+    max-width: 65rem;
   }
 
   .declaration {
@@ -348,12 +352,6 @@ body {
     position: absolute;
     left: -0.75rem;
     visibility: visible;
-  }
-
-  .chart-page__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .chart {
