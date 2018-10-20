@@ -445,6 +445,19 @@ body {
   flex-wrap: wrap;
 }
 
+.conditions__list-item {
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+
+  list-style: none;
+
+  border: 1px solid #a9a9a9;
+
+  flex-basis: 48%;
+}
+
 /* media  queries*/
 
 @media (min-width: 680px) {
@@ -484,5 +497,11 @@ body {
     width: 100%;
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .conditions__list-item {
+    margin-bottom: 2rem;
+
+    flex-basis: 29%;
   }
 }
