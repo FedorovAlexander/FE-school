@@ -429,6 +429,12 @@ body {
   text-align: justify;
 }
 
+.conditions__title {
+  margin-top: 3rem;
+
+  color: #2f3234;
+}
+
 /* media  queries*/
 
 @media (min-width: 680px) {
