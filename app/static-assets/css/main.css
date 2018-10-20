@@ -425,6 +425,10 @@ body {
   font-size: 1.25rem;
 }
 
+.position-info__description {
+  text-align: justify;
+}
+
 /* media  queries*/
 
 @media (min-width: 680px) {
