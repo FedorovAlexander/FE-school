@@ -460,6 +460,22 @@ body {
   flex-basis: 48%;
 }
 
+.comments {
+  padding-bottom: 3rem;
+}
+
+.comments__title {
+  margin-top: 3rem;
+
+  color: #2f3234;
+}
+
+.comments__text {
+  text-align: justify;
+
+  color: #2f3234;
+}
+
 /* media  queries*/
 
 @media (min-width: 680px) {
