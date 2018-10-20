@@ -417,6 +417,14 @@ body {
   fill: #a9a9a9;
 }
 
+.position-info__company-link {
+  text-decoration: none;
+
+  color: #2f3234;
+
+  font-size: 1.25rem;
+}
+
 /* media  queries*/
 
 @media (min-width: 680px) {
