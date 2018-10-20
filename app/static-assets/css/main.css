@@ -199,11 +199,6 @@ body {
   font-size: 1.1rem;
 }
 
-.page-header__img {
-  position: absolute;
-  left: 0;
-}
-
 .page-header__chart-link-text {
   display: none;
 
