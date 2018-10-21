@@ -226,11 +226,11 @@ body {
   flex-direction: column;
 
   width: 100%;
-  max-width: 40rem;
+  max-width: 42rem;
 }
 
 .filters__title {
-  max-width: 40rem;
+  max-width: 42rem;
   padding-right: 0rem;
   padding-left: 1rem;
 
@@ -280,6 +280,8 @@ body {
   display: flex;
   flex-direction: column;
 
+  width: 100%;
+  max-width: 42rem;
   margin-top: 0;
 
   justify-content: center;
@@ -288,7 +290,7 @@ body {
 
 .chart__title {
   width: 100%;
-  max-width: 40rem;
+  max-width: 42rem;
   padding-left: 2rem;
 
   color: #2f3234;
@@ -301,7 +303,7 @@ body {
   flex-direction: column;
 
   width: 100%;
-  max-width: 40rem;
+  max-width: 42rem;
 
   justify-content: space-between;
 }
