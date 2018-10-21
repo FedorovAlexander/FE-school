@@ -479,6 +479,36 @@ body {
   color: #2f3234;
 }
 
+/* company page */
+
+.company-page {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.company-info__title-edit-block {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+
+.company-info__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: #2f3234;
+}
+
+.company-info__description {
+  text-align: justify;
+
+  color: #2f3234;
+}
+
 /* media  queries*/
 
 @media (min-width: 680px) {
