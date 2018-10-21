@@ -457,11 +457,10 @@ body {
 
   list-style: none;
 
+  color: #2f3234;
   border: 1px solid #a9a9a9;
 
   flex-basis: 48%;
-
-  color: #2f3234;
 }
 
 .comments {
