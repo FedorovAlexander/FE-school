@@ -18,5 +18,16 @@ fetch('../../rest/vacancies')
         '</div>';
       })
     })
+
+    var positionLink = document.querySelectorAll('.position-badge__name');
+
+    positionLink.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        var getName = link.innerHTML
+        localStorage.setItem('positionName', getName)
+        window.location.href = '/position';
+      })
+    })
   }
 )
