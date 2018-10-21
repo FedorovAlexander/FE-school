@@ -11,8 +11,8 @@ fetch('../../rest/vacancies')
         return chart.innerHTML +=
         '<div class="position-badge">' +
           '<div class="postion-badge__links">' +
-            '<a href="/position" class="position-badge__name">' + vac.position + '</a>' +
-            '<a href="/company" class="position-badge__company">' + vac.companyName + '</a>' +
+            '<a href="#" class="position-badge__name">' + vac.position + '</a>' +
+            '<a href="#" class="position-badge__company">' + vac.companyName + '</a>' +
           '</div>' +
           '<span position-badge__salary>' + vac.salary + '</span>' +
         '</div>';
