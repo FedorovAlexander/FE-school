@@ -7,7 +7,7 @@
     "roadTime": 15,
     "interesting": true,
     "requiresEducation": true,
-    "comment": null,
+    "comment": "test",
     "status": "candidate",
     "index": 1
   },
@@ -20,7 +20,7 @@
     "roadTime": 25,
     "interesting": false,
     "requiresEducation": false,
-    "comment": null,
+    "comment": "test",
     "status": "not interested",
     "index": 2
   },
@@ -33,7 +33,7 @@
     "roadTime": 30,
     "interesting": true,
     "requiresEducation": true,
-    "comment": null,
+    "comment": "test",
     "status": "denied",
     "index": 3
   },
@@ -46,7 +46,7 @@
     "roadTime": 60,
     "interesting": false,
     "requiresEducation": false,
-    "comment": null,
+    "comment": "test",
     "status": "offer",
     "index": 4
   },
@@ -59,7 +59,7 @@
     "roadTime": 65,
     "interesting": true,
     "requiresEducation": true,
-    "comment": null,
+    "comment": "test",
     "status": "candidate",
     "index": 5
   },
@@ -72,7 +72,7 @@
     "roadTime": 70,
     "interesting": false,
     "requiresEducation": true,
-    "comment": null,
+    "comment": "test",
     "status": "not interested",
     "index": 6
   },
@@ -85,7 +85,7 @@
     "roadTime": 40,
     "interesting": true,
     "requiresEducation": false,
-    "comment": null,
+    "comment": "test",
     "status": "offer",
     "index": 7
   },
@@ -98,7 +98,7 @@
     "roadTime": 35,
     "interesting": false,
     "requiresEducation": false,
-    "comment": null,
+    "comment": "test",
     "status": "denied",
     "index": 8
   }
