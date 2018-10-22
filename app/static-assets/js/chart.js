@@ -15,14 +15,23 @@ fetch('../../rest/vacancies')
     })
 
     var positionLink = document.querySelectorAll('.position-badge__name');
+    var companyLink = document.querySelectorAll('.position-badge__company');
 
     positionLink.forEach((link,index) => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
         var getName = db[index];
-        console.log(getName)
         sessionStorage.setItem('positionObj', JSON.stringify(getName))
         window.location.href = '/position';
+      })
+    })
+
+    companyLink.forEach((link,index) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        var getCompany = db[index];
+        sessionStorage.setItem('positionObj', JSON.stringify(getCompany))
+        window.location.href = '/company';
       })
     })
   })
