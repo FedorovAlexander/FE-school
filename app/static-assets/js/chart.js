@@ -1,33 +1,28 @@
-
 fetch('../../rest/vacancies')
   .then(res => res.json())
   .then(data => db = data)
   .then(() => {
-    var companies = db.companies;
     var chart = document.querySelector('.positions-block');
-    companies.forEach(item => {
-      var vacancy = item.vacancies;
-      vacancy.forEach(vac => {
-        return chart.innerHTML +=
+    db.forEach(item => {
+      return chart.innerHTML +=
         '<div class="position-badge">' +
           '<div class="postion-badge__links">' +
-            '<a href="#" class="position-badge__name">' + vac.position + '</a>' +
-            '<a href="#" class="position-badge__company">' + vac.companyName + '</a>' +
+          '<a href="#" class="position-badge__name">' + item.position + '</a>' +
+          '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
           '</div>' +
-          '<span class="position-badge__salary">' + vac.salary + '</span>' +
+          '<span class="position-badge__salary">' + item.salary + '</span>' +
         '</div>';
-      })
     })
 
     var positionLink = document.querySelectorAll('.position-badge__name');
 
-    positionLink.forEach(link => {
+    positionLink.forEach((link,index) => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
-        var getName = link.innerHTML
-        localStorage.setItem('positionName', getName)
+        var getName = db[index];
+        console.log(getName)
+        sessionStorage.setItem('positionObj', JSON.stringify(getName))
         window.location.href = '/position';
       })
     })
-  }
-)
+  })
