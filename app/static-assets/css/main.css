@@ -550,8 +550,8 @@ body {
   }
 
   .conditions__list-item {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 
-    flex-basis: 29%;
+    flex-basis: 31%;
   }
 }
