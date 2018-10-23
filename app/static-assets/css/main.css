@@ -365,6 +365,21 @@ body {
   flex: 5;
 }
 
+.chart__add-vacancy-link {
+  margin-top: 1.563rem;
+  margin-right: 1rem;
+
+  text-align: right;
+  text-decoration: none;
+
+  color: #a9a9a9;
+
+  font-size: 1.125rem;
+  font-style: italic;
+
+  flex: 1;
+}
+
 /* position badges */
 
 .positions-block {
