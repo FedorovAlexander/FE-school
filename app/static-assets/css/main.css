@@ -1,5 +1,9 @@
 body {
+  display: flex;
+  flex-direction: column;
+
   box-sizing: border-box;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 
@@ -233,6 +237,30 @@ body {
 
   margin: 0;
   padding-left: 0.75rem;
+}
+
+.page-footer {
+  display: flex;
+
+  width: 100%;
+  margin: auto auto 0 auto;
+
+  color: #fff;
+  background-color: #006e7f;
+}
+
+.page-footer__container {
+  position: relative;
+
+  display: flex;
+
+  width: 100%;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  justify-content: center;
 }
 
 /* chart page */
