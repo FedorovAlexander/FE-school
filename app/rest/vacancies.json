@@ -1,6 +1,6 @@
 [{
     "companyName": "Umbrella Corp",
-    "description": "The Umbrella Corporation is an international pharmaceutical company.",
+    "description": "The Umbrella Corporation is an international pharmaceutical company. Founded in the late 1960s by prominent British royal descendants Ozwell E. Spencer and Edward Ashford, it is portrayed in the series as a major international player in pharmaceutical goods and medical supplies, along with more clandestine operations utilizing genetic engineering.",
     "position": "Evil Scientist",
     "salary": "$200000/year",
     "minutes": 480,
@@ -13,7 +13,7 @@
   },
   {
     "companyName": "Umbrella Corp",
-    "description": "The Umbrella Corporation is an international pharmaceutical company.",
+    "description": "The Umbrella Corporation is an international pharmaceutical company. Founded in the late 1960s by prominent British royal descendants Ozwell E. Spencer and Edward Ashford, it is portrayed in the series as a major international player in pharmaceutical goods and medical supplies, along with more clandestine operations utilizing genetic engineering.",
     "position": "Zombie Bites Tester",
     "salary": "$1000000/year",
     "minutes": 10,
@@ -26,7 +26,7 @@
   },
   {
     "companyName": "Umbrella Corp",
-    "description": "The Umbrella Corporation is an international pharmaceutical company.",
+    "description": "The Umbrella Corporation is an international pharmaceutical company. Founded in the late 1960s by prominent British royal descendants Ozwell E. Spencer and Edward Ashford, it is portrayed in the series as a major international player in pharmaceutical goods and medical supplies, along with more clandestine operations utilizing genetic engineering..",
     "position": "Zombie Killing Squad Member",
     "salary": "$150000/year",
     "minutes": 600,
