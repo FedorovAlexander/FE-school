@@ -273,6 +273,7 @@ body {
   margin: 0 auto;
   padding-top: 3.5rem;
   padding-right: 1rem;
+  padding-bottom: 1.5rem;
   padding-left: 1rem;
 
   align-items: center;
@@ -571,7 +572,7 @@ body {
 /* media  queries*/
 
 @media (min-width: 680px) {
-  
+
   .login-page-container {
     flex-direction: row;
 
