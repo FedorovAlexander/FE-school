@@ -346,6 +346,15 @@ body {
   align-items: center;
 }
 
+.chart__title-add-vacancy-block {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+
+  justify-content: space-around;
+}
+
 .chart__title {
   width: 100%;
   max-width: 42rem;
