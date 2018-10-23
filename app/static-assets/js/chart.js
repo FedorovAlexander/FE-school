@@ -2,7 +2,7 @@ fetch('../../rest/vacancies')
   .then(res => res.json())
   .then(data => db = data)
   .then(() => {
-    var chart = document.querySelector('.positions-block');
+    const chart = document.querySelector('.positions-block');
     db.forEach(item => {
       return chart.innerHTML +=
         '<div class="position-badge">' +
@@ -14,8 +14,8 @@ fetch('../../rest/vacancies')
         '</div>';
     })
 
-    var positionLink = document.querySelectorAll('.position-badge__name');
-    var companyLink = document.querySelectorAll('.position-badge__company');
+    const positionLink = document.querySelectorAll('.position-badge__name');
+    const companyLink = document.querySelectorAll('.position-badge__company');
 
     positionLink.forEach((link,index) => {
       link.addEventListener('click', (e) => {

@@ -4,9 +4,9 @@ fetch('../../rest/vacancies')
   .then(() => {
 
     window.onload = function() {
-      var companyName = document.querySelector('.company-info__title');
-      var companyDescription = document.querySelector('.company-info__description');
-      var posObj = JSON.parse(sessionStorage.getItem('positionObj'));
+      const companyName = document.querySelector('.company-info__title');
+      const companyDescription = document.querySelector('.company-info__description');
+      let posObj = JSON.parse(sessionStorage.getItem('positionObj'));
       companyName.innerText = posObj.companyName;
       companyDescription.innerText = posObj.description;
     }
