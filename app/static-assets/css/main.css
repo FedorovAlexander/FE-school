@@ -205,7 +205,7 @@ body {
   right: 1rem;
 }
 
-.page-header__logo{
+.page-header__logo {
   width: 100%;
 
   text-align: center;
@@ -375,6 +375,7 @@ body {
 
   color: #006e7f;
 }
+
 .position-badge__name:hover {
   transition: 0.05s linear;
 
@@ -385,7 +386,6 @@ body {
   transition: 0.05s linear;
 
   color: #ff9180;
-
 }
 
 .position-badge__company {
@@ -487,7 +487,9 @@ body {
   list-style: none;
 
   color: #2f3234;
-  border: 1px solid #a9a9a9;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  box-shadow: 0 0 2px #d3d3d3;
 
   flex-basis: 48%;
 }
@@ -541,7 +543,7 @@ body {
 /* media  queries*/
 
 @media (min-width: 680px) {
-
+  
   .login-page-container {
     flex-direction: row;
 
