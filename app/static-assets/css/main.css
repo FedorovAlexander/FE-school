@@ -358,9 +358,11 @@ body {
 .chart__title {
   width: 100%;
   max-width: 42rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
 
   color: #2f3234;
+
+  flex: 5;
 }
 
 /* position badges */
