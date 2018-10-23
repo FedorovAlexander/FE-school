@@ -171,6 +171,34 @@ body {
   justify-content: space-around;
 }
 
+.page-header__logout-link {
+  position: absolute;
+  top: 0.3rem;
+  left: 1rem;
+
+  display: flex;
+  flex-direction: row;
+
+  text-decoration: none;
+
+  color: #ffffff;
+
+  justify-content: flex-start;
+}
+
+.page-header__logout-img {
+  padding-bottom: 0.25rem;
+}
+
+.page-header__logout-link-text {
+  display: none;
+
+  margin: 0;
+  padding-left: 0.75rem;
+
+  font-size: 1.1rem;
+}
+
 .page-header__chart-link-block {
   position: absolute;
   top: 0.3rem;
@@ -537,11 +565,13 @@ body {
     display: block;
   }
 
+  .page-header__logout-link-text {
+    display: block;
+  }
+
   .page-header__img {
     position: absolute;
     left: -0.75rem;
-
-    visibility: visible;
   }
 
   .chart {
