@@ -504,11 +504,18 @@ body {
 }
 
 .position-info__company-link {
+  transition: 0.05s linear;
   text-decoration: none;
 
   color: #2f3234;
 
   font-size: 1.25rem;
+}
+
+.position-info__company-link:hover {
+  transition: 0.05s linear;
+
+  color: #006e7f;
 }
 
 .position-info__description {
