@@ -1,5 +1,49 @@
 {{> html/start title="addVacancy" settings=settings }}
 {{> html/header }}
-{{> html/footer }}
-<script type="text/javascript" src="static-assets/js/chart.js"></script>
-{{> html/end }}
+
+  <main>
+    <section class="add-vacancy">
+      <h1 class="new-vacancy">Add New Vacancy</h1>
+      <form action="" class="vacancy-form">
+        <fieldset class="vacancy-form__fieldset">
+          <div class="vacancy-form__main-info">
+            <h2 class="vacancy-form__main-info-title">Main Info</h2>
+
+            {{>html/input title="Title" id="title"}}
+            {{>html/input title="Company" id="company"}}
+
+            <label for="companyInfo" class="vacancy-form__label">
+              <p class="vacancy-form__text">Company Info</p>
+              <textarea name="info" id="companyInfo" cols="30" rows="10"></textarea>
+            </label>
+          </div>
+
+          <div class="vacancy-form__conditions-input">
+            <h2 class="vacancy-form__conditions-title">Conditions</h2>
+            {{>html/input title="Salary" id="salary"}}
+            {{>html/input title="Work Time" id="worktime"}}
+            {{>html/input title="Road Time" id="roadtime"}}
+
+            <label for="" class="vacancy-form__label">
+              <p class="vacancy-form__text">Interesting</p>
+              <input type="checkbox" class="vacancy-form__input" id="interesting">
+            </label>
+            <label for="education" class="vacancy-form__label">
+              <p class="vacancy-form__text">Requires Education</p>
+              <input type="checkbox" class="vacancy-form__input" id="education">
+            </label>
+
+            {{>html/input title="Status" id="status"}}
+          </div>
+          <section class="comments">
+            <h3 class="comments__title">Comments</h3>
+            <textarea name="info" id="companyInfo" cols="30" rows="10"></textarea>
+          </section>
+          <button class="vacancy-form__submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  {{> html/footer }}
+  <script type="text/javascript" src="static-assets/js/addVacancy.js"></script>
+  {{> html/end }}
