@@ -614,6 +614,13 @@ body {
     padding-left: 1rem;
   }
 
+  .add-vacancy__title {
+    margin-top: 0;
+    padding-left: 1.5rem;
+
+    color: #2f3234;
+  }
+
 /* media  queries*/
 
 @media (min-width: 680px) {
