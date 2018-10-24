@@ -621,6 +621,13 @@ body {
     color: #2f3234;
   }
 
+  .vacancy-form__main-info-title {
+    font-size: 1.25rem;
+  }
+
+  .vacancy-form__conditions-title {
+    font-size: 1.25rem;
+  }
 /* media  queries*/
 
 @media (min-width: 680px) {
