@@ -711,11 +711,15 @@ body {
     align-items: center;
   }
 
-  .comments__title {
+  .vacancy-form__comments {
+    margin-bottom: 2rem;
+  }
+
+  .vacancy-form__comments-title {
     font-size: 1.25rem;
   }
 
-  .comments__textarea {
+  .vacancy-form__comments-textarea {
     box-sizing: border-box;
     width: 100%;
     max-width: 40.5rem;
