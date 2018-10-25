@@ -667,6 +667,53 @@ body {
     box-shadow: none;
   }
 
+  .status-buttons {
+    flex: 3;
+  }
+
+  .status-buttons {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 0;
+    padding-left: 0;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .status-buttons__item {
+    display: flex;
+    flex-direction: row;
+
+    width: 19%;
+    min-width: 5.25rem;
+    padding-top: 0.3rem;
+    /* padding-right: 0.25rem; */
+    padding-bottom: 0.3rem;
+    /* padding-left: 0.25rem; */
+
+    list-style: none;
+
+    text-align: center;
+
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #dcdcdc;
+
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  .status__buttons-item--long-text {
+    font-size: 0.75rem;
+  }
+
+  .status__buttons-item--active {
+    background-color: #006e7f;
+  }
+
   .submit-button {
     margin: 0 auto;
     padding-top: 0.5rem;
