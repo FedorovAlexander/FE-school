@@ -667,6 +667,34 @@ body {
     box-shadow: none;
   }
 
+  .submit-button {
+    margin: 0 auto;
+    padding-top: 0.5rem;
+    padding-right: 3rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+
+    transition: background-color 0.1s linear;
+
+    color: #fff;
+    border: none;
+    background-color: #006e7f;
+
+    font-weight: 700;
+  }
+
+  .submit-button:hover {
+    transition: background-color 0.2s linear;
+
+    background: #0092a8;
+  }
+
+  .submit-button:active {
+    transition: background-color 0.2s linear;
+
+    background: #0092a8;
+  }
+
   .vacancy-form__fieldset {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
