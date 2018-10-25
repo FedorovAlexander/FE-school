@@ -616,7 +616,7 @@ body {
 
   .add-vacancy__title {
     margin-top: 0;
-    padding-left: 1.5rem;
+    padding-left: 0.875rem;
 
     color: #2f3234;
   }
@@ -714,29 +714,58 @@ body {
     background-color: #006e7f;
   }
 
-  .submit-button {
-    margin: 0 auto;
+  .buttons-block {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .button {
+    max-width: 8rem;
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
     padding-top: 0.5rem;
-    padding-right: 3rem;
     padding-bottom: 0.5rem;
-    padding-left: 3rem;
 
     transition: background-color 0.1s linear;
 
     color: #fff;
     border: none;
-    background-color: #006e7f;
-
-    font-weight: 700;
   }
 
-  .submit-button:hover {
+  .button--cancel {
+    flex: 1;
+    background-color: #dcdcdc;
+  }
+
+  .button--cancel:hover {
+    transition: background-color 0.2s linear;
+
+    background-color: #999;
+  }
+
+  .button--cancel:active {
+    transition: background-color 0.2s linear;
+
+    background-color: #999;
+  }
+
+  .button--save {
+    background-color: #006e7f;
+
+    flex:1;
+  }
+
+  .button--save:hover {
     transition: background-color 0.2s linear;
 
     background: #0092a8;
   }
 
-  .submit-button:active {
+  .button-save:active {
     transition: background-color 0.2s linear;
 
     background: #0092a8;
@@ -746,9 +775,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 1.5rem;
+    padding-bottom: 2rem;
 
     color: #2f3234;
     border: 1px solid #d3d3d3;
@@ -832,5 +859,14 @@ body {
   .add-vacancy {
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .add-vacancy__title {
+    padding-left: 1.5rem;
+  }
+
+  .vacancy-form__fieldset {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 }
