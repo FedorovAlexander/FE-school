@@ -781,4 +781,9 @@ body {
 
     flex-basis: 31%;
   }
+
+  .add-vacancy {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
