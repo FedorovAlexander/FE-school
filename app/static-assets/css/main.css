@@ -493,6 +493,8 @@ body {
   margin-top: 0;
 
   color: #2f3234;
+
+  flex: 4;
 }
 
 .edit-link__img {
@@ -737,8 +739,9 @@ body {
   }
 
   .button--cancel {
-    flex: 1;
     background-color: #dcdcdc;
+
+    flex: 1;
   }
 
   .button--cancel:hover {
