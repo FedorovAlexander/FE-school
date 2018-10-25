@@ -33,7 +33,15 @@
               <input type="checkbox" class="vacancy-form__input vacancy-form__input--checkbox" id="education">
             </label>
 
-            {{>html/input title="Status" id="status"}}
+            <label for="status" class="vacancy-form__label vacancy-form__label--status">
+              <p class="vacancy-form__text vacancy-form__text--status">Status</p>
+              <ul class="status-buttons">
+                {{>html/buttons-set-item class="status-buttons__item" title="Offer"}}
+                {{>html/buttons-set-item class="status-buttons__item" title="Candicate"}}
+                {{>html/buttons-set-item class="status-buttons__item status__buttons-item--long-text" title="Not Interested"}}
+                {{>html/buttons-set-item class="status-buttons__item" title="Decline"}}
+              </ul>
+            </label>
           </div>
           <section class="vacancy-form__comments">
             <h2 class="vacancy-form__comments-title">Comments</h3>
