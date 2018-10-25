@@ -47,7 +47,10 @@
             <h2 class="vacancy-form__comments-title">Comments</h3>
             <textarea name="info" id="companyInfo" rows="10" class="vacancy-form__comments-textarea"></textarea>
           </section>
-          <button class="submit-button">Save</button>
+          <section class="buttons-block">
+            {{>html/button class="button button--save" formaction="/position" title="Save"}}
+            {{>html/button class="button button--cancel" formaction="/chart" title="Cancel"}}
+          </section>
         </fieldset>
       </form>
     </section>
