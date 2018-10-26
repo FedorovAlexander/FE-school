@@ -34,4 +34,17 @@ fetch('../../rest/vacancies')
         window.location.href = '/company';
       })
     })
+    function colorStatus() {
+      const positionBadge = document.querySelectorAll('.position-badge')
+      positionBadge.forEach((item) => {
+        if (item.getAttribute("data-status") === "offer") {
+          item.style.backgroundColor = '#b8ffb8';
+        } else if ((item.getAttribute("data-status") === "candidate")) {
+          item.style.backgroundColor = '#fffacd';
+        } else if ((item.getAttribute("data-status") === "denied")) {
+          item.style.backgroundColor = '#ffcccc';
+        }
+      })
+    }
+    colorStatus();
   })
