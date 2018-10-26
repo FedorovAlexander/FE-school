@@ -20,7 +20,7 @@ fetch('../../rest/vacancies')
     positionLink.forEach((link,index) => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
-        var getName = db[index];
+        let getName = db[index];
         sessionStorage.setItem('positionObj', JSON.stringify(getName))
         window.location.href = '/position';
       })
@@ -29,7 +29,7 @@ fetch('../../rest/vacancies')
     companyLink.forEach((link,index) => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
-        var getCompany = db[index];
+        let getCompany = db[link];
         sessionStorage.setItem('positionObj', JSON.stringify(getCompany))
         window.location.href = '/company';
       })
