@@ -90,15 +90,18 @@ fetch('../../rest/vacancies')
       })
     })
 
-    function buttonActive() {
+    function salaryFilterActive() {
       const filtersButton = document.querySelectorAll('.filters__buttons-item');
       filtersButton.forEach((item) => {
         item.addEventListener('click', () => {
-          item.classList.toggle('filters__buttons-item--active')
+          if (item.classList.contains('filters__buttons-item--salary')) {
+            item.classList.toggle('filters__buttons-item--active')
+            salaryFilter();
+          }
         })
       })
     }
-    buttonActive();
+    salaryFilterActive();
 
     function colorStatus() {
       const positionBadge = document.querySelectorAll('.position-badge')
