@@ -5,19 +5,19 @@ fetch('../../rest/vacancies')
     const chart = document.querySelector('.positions-block');
     let buttons = document.querySelectorAll('.filters__buttons-item');
 
-      function statusFilter() {
-        let offer = db.filter(woof => {
-           return woof.status === 'offer';
-         })
-        let candidate = db.filter(woof => {
-           return woof.status === 'candidate';
-         })
-        let denied = db.filter(woof => {
-           return woof.status === 'denied';
-         })
-        let notInterested = db.filter(woof => {
-           return woof.status === 'not interested';
-         })
+    function statusFilter() {
+      let offer = db.filter(woof => {
+        return woof.status === 'offer';
+      })
+      let candidate = db.filter(woof => {
+        return woof.status === 'candidate';
+      })
+      let denied = db.filter(woof => {
+        return woof.status === 'denied';
+      })
+      let notInterested = db.filter(woof => {
+        return woof.status === 'not interested';
+      })
 
       offer.forEach(item => {
         chart.innerHTML +=
@@ -102,6 +102,18 @@ fetch('../../rest/vacancies')
       })
     }
     salaryFilterActive();
+
+    function salaryFilterInactive() {
+      let salary = document.querySelector('.filters__buttons-item--salary')
+      salary.addEventListener('click', () => {
+        if (!salary.classList.contains('filters__buttons-item--active')) {
+          chart.innerHTML = '';
+          chart.innerHMTL = statusFilter();
+          colorStatus();
+        }
+      })
+    }
+    salaryFilterInactive();
 
     function colorStatus() {
       const positionBadge = document.querySelectorAll('.position-badge')
