@@ -26,7 +26,7 @@ fetch('../../rest/vacancies')
           '<a href="#" class="position-badge__name">' + item.position + '</a>' +
           '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
           '</div>' +
-               '<span class="position-badge__salary">' + item.salary + '</span>' +
+          '<span class="position-badge__salary">$' + item.salary + '/year</span>' +
           '</div>';
       })
       candidate.forEach(item => {
@@ -36,7 +36,7 @@ fetch('../../rest/vacancies')
           '<a href="#" class="position-badge__name">' + item.position + '</a>' +
           '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
           '</div>' +
-               '<span class="position-badge__salary">' + item.salary + '</span>' +
+          '<span class="position-badge__salary">$' + item.salary + '/year</span>' +
           '</div>';
       })
       denied.forEach(item => {
@@ -46,7 +46,7 @@ fetch('../../rest/vacancies')
           '<a href="#" class="position-badge__name">' + item.position + '</a>' +
           '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
           '</div>' +
-               '<span class="position-badge__salary">' + item.salary + '</span>' +
+          '<span class="position-badge__salary">$' + item.salary + '/year</span>' +
           '</div>';
       })
       notInterested.forEach(item => {
@@ -56,7 +56,7 @@ fetch('../../rest/vacancies')
           '<a href="#" class="position-badge__name">' + item.position + '</a>' +
           '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
           '</div>' +
-               '<span class="position-badge__salary">' + item.salary + '</span>' +
+          '<span class="position-badge__salary">$' + item.salary + '/year</span>' +
           '</div>';
       })
     }
