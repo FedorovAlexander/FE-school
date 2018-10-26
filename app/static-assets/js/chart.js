@@ -34,6 +34,14 @@ fetch('../../rest/vacancies')
         window.location.href = '/company';
       })
     })
+
+    const filtersButton = document.querySelectorAll('.filters__buttons-item');
+    filtersButton.forEach((item) => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('filters__buttons-item--active')
+      })
+    })
+
     function colorStatus() {
       const positionBadge = document.querySelectorAll('.position-badge')
       positionBadge.forEach((item) => {
