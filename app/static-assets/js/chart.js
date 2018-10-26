@@ -19,48 +19,48 @@ fetch('../../rest/vacancies')
            return woof.status === 'not interested';
          })
 
-         offer.forEach(item => {
-           chart.innerHTML +=
-           '<div class="position-badge" data-status="' + item.status + '">' +
-               '<div class="postion-badge__links">' +
-               '<a href="#" class="position-badge__name">' + item.position + '</a>' +
-               '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
-               '</div>' +
+      offer.forEach(item => {
+        chart.innerHTML +=
+          '<div class="position-badge" data-salary="' + item.salary + '" data-status="' + item.status + '">' +
+          '<div class="postion-badge__links">' +
+          '<a href="#" class="position-badge__name">' + item.position + '</a>' +
+          '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
+          '</div>' +
                '<span class="position-badge__salary">' + item.salary + '</span>' +
-               '</div>';
-         })
-         candidate.forEach(item => {
-           chart.innerHTML +=
-           '<div class="position-badge" data-status="' + item.status + '">' +
-               '<div class="postion-badge__links">' +
-               '<a href="#" class="position-badge__name">' + item.position + '</a>' +
-               '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
-               '</div>' +
+          '</div>';
+      })
+      candidate.forEach(item => {
+        chart.innerHTML +=
+          '<div class="position-badge" data-salary="' + item.salary + '" data-status="' + item.status + '">' +
+          '<div class="postion-badge__links">' +
+          '<a href="#" class="position-badge__name">' + item.position + '</a>' +
+          '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
+          '</div>' +
                '<span class="position-badge__salary">' + item.salary + '</span>' +
-               '</div>';
-         })
-         denied.forEach(item => {
-           chart.innerHTML +=
-           '<div class="position-badge" data-status="' + item.status + '">' +
-               '<div class="postion-badge__links">' +
-               '<a href="#" class="position-badge__name">' + item.position + '</a>' +
-               '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
-               '</div>' +
+          '</div>';
+      })
+      denied.forEach(item => {
+        chart.innerHTML +=
+          '<div class="position-badge" data-salary="' + item.salary + '" data-status="' + item.status + '">' +
+          '<div class="postion-badge__links">' +
+          '<a href="#" class="position-badge__name">' + item.position + '</a>' +
+          '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
+          '</div>' +
                '<span class="position-badge__salary">' + item.salary + '</span>' +
-               '</div>';
-         })
-         notInterested.forEach(item => {
-           chart.innerHTML +=
-           '<div class="position-badge" data-status="' + item.status + '">' +
-               '<div class="postion-badge__links">' +
-               '<a href="#" class="position-badge__name">' + item.position + '</a>' +
-               '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
-               '</div>' +
+          '</div>';
+      })
+      notInterested.forEach(item => {
+        chart.innerHTML +=
+          '<div class="position-badge" data-salary="' + item.salary + '" data-status="' + item.status + '">' +
+          '<div class="postion-badge__links">' +
+          '<a href="#" class="position-badge__name">' + item.position + '</a>' +
+          '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
+          '</div>' +
                '<span class="position-badge__salary">' + item.salary + '</span>' +
-               '</div>';
-         })
-      }
-      statusFilter();
+          '</div>';
+      })
+    }
+    statusFilter();
 
     const positionLink = document.querySelectorAll('.position-badge__name');
     const companyLink = document.querySelectorAll('.position-badge__company');
