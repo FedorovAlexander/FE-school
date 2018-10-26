@@ -35,12 +35,15 @@ fetch('../../rest/vacancies')
       })
     })
 
+    function buttonActive() {
     const filtersButton = document.querySelectorAll('.filters__buttons-item');
     filtersButton.forEach((item) => {
       item.addEventListener('click', () => {
         item.classList.toggle('filters__buttons-item--active')
       })
     })
+    }
+    buttonActive();
 
     function colorStatus() {
       const positionBadge = document.querySelectorAll('.position-badge')
