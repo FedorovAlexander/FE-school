@@ -62,6 +62,13 @@ fetch('../../rest/vacancies')
     }
     statusFilter();
 
+    function salaryFilter() {
+      let badge = document.querySelectorAll(".position-badge");
+      Array.prototype.map.call(badge, e => e.cloneNode(true))
+        .sort((p, c) => Date.parse(p.dataset.salary) <= Date.parse(c.dataset.salary) ? 1 : -1)
+        .forEach((e, i) => badge[i].parentNode.replaceChild(e, badge[i]));
+    }
+
     const positionLink = document.querySelectorAll('.position-badge__name');
     const companyLink = document.querySelectorAll('.position-badge__company');
 
