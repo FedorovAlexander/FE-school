@@ -3,7 +3,8 @@ fetch('../../rest/vacancies')
   .then(data => db = data)
   .then(() => {
 
-    window.onload = function() {
+    window.onload = showPosition();
+    function showPosition() {
       const name = document.querySelector('.position-info__title');
       const company = document.querySelector('.position-info__company-link');
       const companyDesc = document.querySelector('.position-info__description');
@@ -35,7 +36,7 @@ fetch('../../rest/vacancies')
       };
 
       if (posObj.requiresEducation === true) {
-        education.innerText = 'Yes';
+        education.innerText = 'Requires';
       } else {
         education.innerText = 'No';
       };
