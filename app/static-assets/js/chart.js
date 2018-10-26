@@ -26,10 +26,10 @@ fetch('../../rest/vacancies')
       })
     })
 
-    companyLink.forEach((link,index) => {
+    companyLink.forEach((link, index) => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
-        let getCompany = db[link];
+        let getCompany = db[index];
         sessionStorage.setItem('positionObj', JSON.stringify(getCompany))
         window.location.href = '/company';
       })
