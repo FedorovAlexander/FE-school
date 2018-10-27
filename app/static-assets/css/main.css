@@ -279,6 +279,44 @@ body {
   align-items: center;
 }
 
+.search {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 42rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.search__fieldset {
+  padding: 0;
+
+  border: none;
+}
+
+.search__form {
+  max-width: 42rem;
+}
+
+.search__text-input {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 42rem;
+  padding: 0.475rem;
+  padding-top: 0.475rem;
+  padding-right: 0.875rem;
+  padding-bottom: 0.475rem;
+  padding-left: 0.875rem;
+
+  color: #2f3234;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  box-shadow: 0 0 2px #d3d3d3;
+
+  font-size: 1rem;
+}
+
 .filters {
   display: flex;
   flex-direction: column;
