@@ -64,7 +64,7 @@ fetch('../../rest/vacancies')
       positionLinkClick();
       companyLinkClick();
 
-          }
+    }
     // worktime
 
     function workHoursFilter() {
@@ -113,17 +113,19 @@ fetch('../../rest/vacancies')
     }
     filtersActive();
 
-    function roadTimeFilterInactive() {
-      let roadtime = document.querySelector('.filters__buttons-item--roadtime')
-      roadtime.addEventListener('click', () => {
-        if (!roadtime.classList.contains('filters__buttons-item--active')) {
+    function filtersInActive() {
+      const filtersButton = document.querySelectorAll('.filters__buttons-item');
+      filtersButton.forEach((item) => {
+        item.addEventListener('click', () => {
+          if (!item.classList.contains('filters__buttons-item--active')) {
             chart.innerHTML = '';
             chart.innerHMTL = statusFilter();
             colorStatus();
           }
         })
+      })
     }
-    roadTimeFilterInactive();
+    filtersInActive();
 
     // color buy status
 
