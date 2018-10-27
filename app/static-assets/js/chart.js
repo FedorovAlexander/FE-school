@@ -59,6 +59,8 @@ fetch('../../rest/vacancies')
           '<span class="position-badge__salary">$' + item.salary + '/year</span>' +
           '</div>';
       })
+      positionLinkClick();
+      companyLinkClick();
     }
     statusFilter();
 
@@ -67,28 +69,34 @@ fetch('../../rest/vacancies')
       Array.prototype.map.call(badge, e => e.cloneNode(true))
         .sort((p, c) => Date.parse(p.dataset.salary) <= Date.parse(c.dataset.salary) ? 1 : -1)
         .forEach((e, i) => badge[i].parentNode.replaceChild(e, badge[i]));
+        positionLinkClick();
+        companyLinkClick();
     }
 
-    const positionLink = document.querySelectorAll('.position-badge__name');
-    const companyLink = document.querySelectorAll('.position-badge__company');
-
-    positionLink.forEach((link, index) => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        let getName = db[index];
-        sessionStorage.setItem('positionObj', JSON.stringify(getName))
-        window.location.href = '/position';
+    function positionLinkClick() {
+      const positionLink = document.querySelectorAll('.position-badge__name');
+      positionLink.forEach((link, index) => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          let getName = db[index];
+          sessionStorage.setItem('positionObj', JSON.stringify(getName))
+          window.location.href = '/position';
+        })
       })
-    })
+    }
 
-    companyLink.forEach((link, index) => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        let getCompany = db[index];
-        sessionStorage.setItem('positionObj', JSON.stringify(getCompany))
-        window.location.href = '/company';
+    function companyLinkClick() {
+      const companyLink = document.querySelectorAll('.position-badge__company');
+      companyLink.forEach((link, index) => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          let getCompany = db[index];
+          sessionStorage.setItem('positionObj', JSON.stringify(getCompany))
+          window.location.href = '/company';
+        })
       })
-    })
+    }
+
 
     function salaryFilterActive() {
       const filtersButton = document.querySelectorAll('.filters__buttons-item');
