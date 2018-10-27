@@ -30,15 +30,6 @@ fetch('../../rest/vacancies')
       })
     }
 
-    function salaryFilter() {
-      let badge = document.querySelectorAll(".position-badge");
-      Array.prototype.map.call(badge, e => e.cloneNode(true))
-        .sort((p, c) => Date.parse(p.dataset.salary) <= Date.parse(c.dataset.salary) ? 1 : -1)
-        .forEach((e, i) => badge[i].parentNode.replaceChild(e, badge[i]));
-      positionLinkClick();
-      companyLinkClick();
-    }
-
     function positionLinkClick() {
       const positionLink = document.querySelectorAll('.position-badge__name');
       positionLink.forEach((link, index) => {
@@ -64,6 +55,16 @@ fetch('../../rest/vacancies')
       })
     }
 
+    // salary
+
+    function salaryFilter() {
+      let badge = document.querySelectorAll(".position-badge");
+      Array.prototype.map.call(badge, e => e.cloneNode(true))
+        .sort((p, c) => Date.parse(p.dataset.salary) <= Date.parse(c.dataset.salary) ? 1 : -1)
+        .forEach((e, i) => badge[i].parentNode.replaceChild(e, badge[i]));
+      positionLinkClick();
+      companyLinkClick();
+    }
 
     function salaryFilterActive() {
       const filtersButton = document.querySelectorAll('.filters__buttons-item');
@@ -89,6 +90,80 @@ fetch('../../rest/vacancies')
       })
     }
     salaryFilterInactive();
+
+    // worktime
+
+    function workHoursFilter() {
+      let badge = document.querySelectorAll(".position-badge");
+      Array.prototype.map.call(badge, e => e.cloneNode(true))
+        .sort((p, c) => Date.parse(p.dataset.minutes) <= Date.parse(c.dataset.minutes) ? 1 : -1)
+        .forEach((e, i) => badge[i].parentNode.replaceChild(e, badge[i]));
+      positionLinkClick();
+      companyLinkClick();
+    }
+
+    function workHoursFilterActive() {
+      const filtersButton = document.querySelectorAll('.filters__buttons-item');
+      filtersButton.forEach((item) => {
+        item.addEventListener('click', () => {
+          if (item.classList.contains('filters__buttons-item--worktime')) {
+            item.classList.toggle('filters__buttons-item--active')
+            workHoursFilter();
+          }
+        })
+      })
+    }
+    workHoursFilterActive();
+
+    function workHoursFilterInactive() {
+      let worktime = document.querySelector('.filters__buttons-item--worktime')
+      worktime.addEventListener('click', () => {
+        if (!worktime.classList.contains('filters__buttons-item--active')) {
+          chart.innerHTML = '';
+          chart.innerHMTL = statusFilter();
+          colorStatus();
+        }
+      })
+    }
+    workHoursFilterInactive();
+
+    // roadTime
+
+    function roadTimeFilter() {
+      let badge = document.querySelectorAll(".position-badge");
+      Array.prototype.map.call(badge, e => e.cloneNode(true))
+        .sort((p, c) => Date.parse(p.dataset.road) <= Date.parse(c.dataset.road) ? 1 : -1)
+        .forEach((e, i) => badge[i].parentNode.replaceChild(e, badge[i]));
+      positionLinkClick();
+      companyLinkClick();
+    }
+
+    function roadTimeFilterActive() {
+      const filtersButton = document.querySelectorAll('.filters__buttons-item');
+      filtersButton.forEach((item) => {
+        item.addEventListener('click', () => {
+          if (item.classList.contains('filters__buttons-item--roadtime')) {
+            item.classList.toggle('filters__buttons-item--active')
+            roadTimeFilter();
+          }
+        })
+      })
+    }
+    roadTimeFilterActive();
+
+    function roadTimeFilterInactive() {
+      let roadtime = document.querySelector('.filters__buttons-item--roadtime')
+      roadtime.addEventListener('click', () => {
+        if (!roadtime.classList.contains('filters__buttons-item--active')) {
+          chart.innerHTML = '';
+          chart.innerHMTL = statusFilter();
+          colorStatus();
+        }
+      })
+    }
+    roadTimeFilterInactive();
+
+    // color buy status
 
     function colorStatus() {
       const positionBadge = document.querySelectorAll('.position-badge')
