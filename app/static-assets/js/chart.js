@@ -3,74 +3,40 @@ fetch('../../rest/vacancies')
   .then(data => db = data)
   .then(() => {
     const chart = document.querySelector('.positions-block');
-    let buttons = document.querySelectorAll('.filters__buttons-item');
 
     function statusFilter() {
-      let offer = db.filter(woof => {
-        return woof.status === 'offer';
-      })
-      let candidate = db.filter(woof => {
-        return woof.status === 'candidate';
-      })
-      let denied = db.filter(woof => {
-        return woof.status === 'denied';
-      })
-      let notInterested = db.filter(woof => {
-        return woof.status === 'not interested';
-      })
-
-      offer.forEach(item => {
-        chart.innerHTML +=
-          '<div class="position-badge" data-salary="' + item.salary + '" data-status="' + item.status + '">' +
-          '<div class="postion-badge__links">' +
-          '<a href="#" class="position-badge__name">' + item.position + '</a>' +
-          '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
-          '</div>' +
-          '<span class="position-badge__salary">$' + item.salary + '/year</span>' +
-          '</div>';
-      })
-      candidate.forEach(item => {
-        chart.innerHTML +=
-          '<div class="position-badge" data-salary="' + item.salary + '" data-status="' + item.status + '">' +
-          '<div class="postion-badge__links">' +
-          '<a href="#" class="position-badge__name">' + item.position + '</a>' +
-          '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
-          '</div>' +
-          '<span class="position-badge__salary">$' + item.salary + '/year</span>' +
-          '</div>';
-      })
-      denied.forEach(item => {
-        chart.innerHTML +=
-          '<div class="position-badge" data-salary="' + item.salary + '" data-status="' + item.status + '">' +
-          '<div class="postion-badge__links">' +
-          '<a href="#" class="position-badge__name">' + item.position + '</a>' +
-          '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
-          '</div>' +
-          '<span class="position-badge__salary">$' + item.salary + '/year</span>' +
-          '</div>';
-      })
-      notInterested.forEach(item => {
-        chart.innerHTML +=
-          '<div class="position-badge" data-salary="' + item.salary + '" data-status="' + item.status + '">' +
-          '<div class="postion-badge__links">' +
-          '<a href="#" class="position-badge__name">' + item.position + '</a>' +
-          '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
-          '</div>' +
-          '<span class="position-badge__salary">$' + item.salary + '/year</span>' +
-          '</div>';
-      })
+      createPositionWithStatus('offer')
+      createPositionWithStatus('candidate')
+      createPositionWithStatus('denied')
+      createPositionWithStatus('not interested')
       positionLinkClick();
       companyLinkClick();
     }
     statusFilter();
+
+    function createPositionWithStatus(status) {
+      let filter = db.filter(woof => {
+        return woof.status === status;
+      })
+      filter.forEach(item => {
+        chart.innerHTML +=
+          '<div class="position-badge" data-salary="' + item.salary + '" data-status="' + item.status + '">' +
+          '<div class="postion-badge__links">' +
+          '<a href="#" class="position-badge__name">' + item.position + '</a>' +
+          '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
+          '</div>' +
+          '<span class="position-badge__salary">$' + item.salary + '/year</span>' +
+          '</div>';
+      })
+    }
 
     function salaryFilter() {
       let badge = document.querySelectorAll(".position-badge");
       Array.prototype.map.call(badge, e => e.cloneNode(true))
         .sort((p, c) => Date.parse(p.dataset.salary) <= Date.parse(c.dataset.salary) ? 1 : -1)
         .forEach((e, i) => badge[i].parentNode.replaceChild(e, badge[i]));
-        positionLinkClick();
-        companyLinkClick();
+      positionLinkClick();
+      companyLinkClick();
     }
 
     function positionLinkClick() {
@@ -84,6 +50,7 @@ fetch('../../rest/vacancies')
         })
       })
     }
+
 
     function companyLinkClick() {
       const companyLink = document.querySelectorAll('.position-badge__company');
