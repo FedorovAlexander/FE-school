@@ -20,7 +20,7 @@ fetch('../../rest/vacancies')
       })
       filter.forEach(item => {
         chart.innerHTML +=
-          '<div class="position-badge" data-salary="' + item.salary + '" data-status="' + item.status + '">' +
+          '<div class="position-badge" data-road="' + item.roadTime + '" data-minutes="' + item.minutes + '" data-salary="' + item.salary + '" data-status="' + item.status + '">' +
           '<div class="postion-badge__links">' +
           '<a href="#" class="position-badge__name">' + item.position + '</a>' +
           '<a href="#" class="position-badge__company">' + item.companyName + '</a>' +
