@@ -42,7 +42,6 @@ fetch('../../rest/vacancies')
       })
     }
 
-
     function companyLinkClick() {
       const companyLink = document.querySelectorAll('.position-badge__company');
       companyLink.forEach((link, index) => {
@@ -64,33 +63,8 @@ fetch('../../rest/vacancies')
         .forEach((e, i) => badge[i].parentNode.replaceChild(e, badge[i]));
       positionLinkClick();
       companyLinkClick();
-    }
 
-    function salaryFilterActive() {
-      const filtersButton = document.querySelectorAll('.filters__buttons-item');
-      filtersButton.forEach((item) => {
-        item.addEventListener('click', () => {
-          if (item.classList.contains('filters__buttons-item--salary')) {
-            item.classList.toggle('filters__buttons-item--active')
-            salaryFilter();
           }
-        })
-      })
-    }
-    salaryFilterActive();
-
-    function salaryFilterInactive() {
-      let salary = document.querySelector('.filters__buttons-item--salary')
-      salary.addEventListener('click', () => {
-        if (!salary.classList.contains('filters__buttons-item--active')) {
-          chart.innerHTML = '';
-          chart.innerHMTL = statusFilter();
-          colorStatus();
-        }
-      })
-    }
-    salaryFilterInactive();
-
     // worktime
 
     function workHoursFilter() {
@@ -101,31 +75,6 @@ fetch('../../rest/vacancies')
       positionLinkClick();
       companyLinkClick();
     }
-
-    function workHoursFilterActive() {
-      const filtersButton = document.querySelectorAll('.filters__buttons-item');
-      filtersButton.forEach((item) => {
-        item.addEventListener('click', () => {
-          if (item.classList.contains('filters__buttons-item--worktime')) {
-            item.classList.toggle('filters__buttons-item--active')
-            workHoursFilter();
-          }
-        })
-      })
-    }
-    workHoursFilterActive();
-
-    function workHoursFilterInactive() {
-      let worktime = document.querySelector('.filters__buttons-item--worktime')
-      worktime.addEventListener('click', () => {
-        if (!worktime.classList.contains('filters__buttons-item--active')) {
-          chart.innerHTML = '';
-          chart.innerHMTL = statusFilter();
-          colorStatus();
-        }
-      })
-    }
-    workHoursFilterInactive();
 
     // roadTime
 
@@ -138,28 +87,41 @@ fetch('../../rest/vacancies')
       companyLinkClick();
     }
 
-    function roadTimeFilterActive() {
+    function filtersActive() {
       const filtersButton = document.querySelectorAll('.filters__buttons-item');
+      const buttonSalary = document.querySelector('.filters__buttons-item--salary');
+      const buttonRoadtime = document.querySelector('.filters__buttons-item--roadtime');
+      const buttonWorktime = document.querySelector('.filters__buttons-item--worktime');
       filtersButton.forEach((item) => {
         item.addEventListener('click', () => {
-          if (item.classList.contains('filters__buttons-item--roadtime')) {
-            item.classList.toggle('filters__buttons-item--active')
+          item.classList.toggle('filters__buttons-item--active')
+          if (item.classList.contains('filters__buttons-item--salary')) {
+            buttonRoadtime.classList.remove('filters__buttons-item--active')
+            buttonWorktime.classList.remove('filters__buttons-item--active')
+            salaryFilter();
+          } else if (item.classList.contains('filters__buttons-item--worktime')) {
+            buttonRoadtime.classList.remove('filters__buttons-item--active')
+            buttonSalary.classList.remove('filters__buttons-item--active')
+            workHoursFilter();
+          } else if (item.classList.contains('filters__buttons-item--roadtime')) {
+            buttonSalary.classList.remove('filters__buttons-item--active')
+            buttonWorktime.classList.remove('filters__buttons-item--active')
             roadTimeFilter();
           }
         })
       })
     }
-    roadTimeFilterActive();
+    filtersActive();
 
     function roadTimeFilterInactive() {
       let roadtime = document.querySelector('.filters__buttons-item--roadtime')
       roadtime.addEventListener('click', () => {
         if (!roadtime.classList.contains('filters__buttons-item--active')) {
-          chart.innerHTML = '';
-          chart.innerHMTL = statusFilter();
-          colorStatus();
-        }
-      })
+            chart.innerHTML = '';
+            chart.innerHMTL = statusFilter();
+            colorStatus();
+          }
+        })
     }
     roadTimeFilterInactive();
 
