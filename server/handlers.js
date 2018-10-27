@@ -26,7 +26,7 @@ function renderPageHandler(handlebars, settings) {
     return function(req, res) {
         const cleanedUrl = cutParamsFromUrl(req.originalUrl);
         const isNoPath = ['', '/'].indexOf(cleanedUrl) !== -1;
-        const pagePath = parsePathname(isNoPath ? '/index' : cleanedUrl);
+        const pagePath = parsePathname(isNoPath ? '/loginPage' : cleanedUrl);
 
         try {
             const template = readFile(
