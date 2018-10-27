@@ -142,4 +142,20 @@ fetch('../../rest/vacancies')
       })
     }
     colorStatus();
+
+    function search() {
+      const input = document.querySelector('#input')
+      input.addEventListener('keyup', function() {
+        let filter = input.value;
+        const badges = document.querySelectorAll('.position-badge')
+        badges.forEach(item => {
+          if (item.textContent.search(new RegExp(filter, "i")) < 0) {
+            item.style.display = 'none';
+          } else {
+            item.style.display = 'flex';
+          }
+        })
+      })
+    }
+    search();
   })
