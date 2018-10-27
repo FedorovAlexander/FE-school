@@ -364,13 +364,28 @@ body {
   border: 1px solid #fff;
   background-color: #ababab;
 
+  transition: background-color 0.1s linear;
+
   justify-content: center;
   align-items: center;
   flex: 1;
 }
 
+.filters__buttons-item:hover {
+  transition: background-color 0.1s linear;
+
+  background-color: #999;
+}
+
 .filters__buttons-item--active {
+  transition: background-color 0.1s linear;
+
   background-color: #006e7f;
+}
+.filters__buttons-item--active:hover {
+  transition: background-color 0.1s linear;
+
+  background-color: #0092a8;
 }
 
 .chart {
