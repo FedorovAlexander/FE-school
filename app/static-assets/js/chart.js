@@ -158,4 +158,14 @@ fetch('../../rest/vacancies')
       })
     }
     search();
+
+    function buttonsLinkReset() {
+      let buttons = document.querySelectorAll('.filters__buttons-link')
+      buttons.forEach(foo => {
+        foo.addEventListener('click', (e) => {
+          e.preventDefault();
+        })
+      })
+    }
+    buttonsLinkReset();
   })

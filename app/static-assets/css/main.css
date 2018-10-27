@@ -349,22 +349,17 @@ body {
   flex-direction: row;
 
   width: 19%;
-  min-width: 5.25rem;
-  padding-top: 0.475rem;
-  padding-right: 0.25rem;
-  padding-bottom: 0.475rem;
-  padding-left: 0.25rem;
+  min-width: 6rem;
+  min-height: 2.375rem;
 
   list-style: none;
 
   cursor: pointer;
+  transition: background-color 0.1s linear;
   text-align: center;
 
-  color: #fff;
   border: 1px solid #fff;
   background-color: #ababab;
-
-  transition: background-color 0.1s linear;
 
   justify-content: center;
   align-items: center;
@@ -382,10 +377,24 @@ body {
 
   background-color: #006e7f;
 }
+
 .filters__buttons-item--active:hover {
   transition: background-color 0.1s linear;
 
   background-color: #0092a8;
+}
+
+.filters__buttons-link {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  text-decoration: none;
+
+  color: #fff;
+
+  line-height: 2.375rem;
 }
 
 .chart {
