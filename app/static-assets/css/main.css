@@ -456,7 +456,7 @@ body {
 }
 
 .position-badge {
-  display: flex;
+  display: none;
   flex-direction: row;
 
   margin-bottom: 0.5rem;
