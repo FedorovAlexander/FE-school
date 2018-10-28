@@ -693,114 +693,114 @@ body {
 
 /* add vacancy page */
 
-  .add-vacancy {
-    box-sizing: border-box;
+.add-vacancy {
+  box-sizing: border-box;
   max-width: 60rem;
-    margin: 0 auto;
-    padding-top: 5rem;
-    padding-right: 1rem;
-    padding-bottom: 3rem;
-    padding-left: 1rem;
-  }
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-right: 1rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+}
 
-  .add-vacancy__title {
-    margin-top: 0;
-    padding-left: 0.875rem;
+.add-vacancy__title {
+  margin-top: 0;
+  padding-left: 0.875rem;
 
-    color: #2f3234;
-  }
+  color: #2f3234;
+}
 
-  .vacancy-form__main-info-title {
-    font-size: 1.25rem;
-  }
+.vacancy-form__main-info-title {
+  font-size: 1.25rem;
+}
 
-  .vacancy-form__conditions-title {
-    font-size: 1.25rem;
-  }
+.vacancy-form__conditions-title {
+  font-size: 1.25rem;
+}
 
-  .vacancy-form__label {
-    display: flex;
-    flex-direction: row;
+.vacancy-form__label {
+  display: flex;
+  flex-direction: row;
 
-    box-sizing: border-box;
-    margin-bottom: 1.5rem;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
 
-    align-items: baseline;
-    justify-content: space-between;
-  }
+  align-items: baseline;
+  justify-content: space-between;
+}
 
-  .vacancy-form__text {
-    margin-top: 0;
-    margin-bottom: 0;
+.vacancy-form__text {
+  margin-top: 0;
+  margin-bottom: 0;
 
-    flex: 2;
-  }
+  flex: 2;
+}
 
-  .vacancy-form__input {
-    padding: 0.475rem;
+.vacancy-form__input {
+  padding: 0.475rem;
 
-    color: #2f3234;
-    border: 1px solid #d3d3d3;
-    border-radius: 3px;
-    box-shadow: 0 0 2px #d3d3d3;
-
-    flex: 3;
-  }
-
-  .vacancy-form__input--textarea {
-    resize: none;
-  }
-
-  .vacancy-form__input--checkbox {
-    border: none;
-    box-shadow: none;
-  }
-
-.status__buttons {
-    display: flex;
-    flex-direction: row;
-
-    margin-top: 0;
-    padding-left: 0;
+  color: #2f3234;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  box-shadow: 0 0 2px #d3d3d3;
 
   flex: 3;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+}
+
+.vacancy-form__input--textarea {
+  resize: none;
+}
+
+.vacancy-form__input--checkbox {
+  border: none;
+  box-shadow: none;
+}
+
+.status__buttons {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 0;
+  padding-left: 0;
+
+  flex: 3;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .status__buttons-item {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    width: 19%;
+  width: 19%;
   min-width: 6rem;
   min-height: 2.375rem;
 
-    list-style: none;
+  list-style: none;
 
   cursor: pointer;
   transition: background-color 0.1s linear;
-    text-align: center;
+  text-align: center;
 
-    border: 1px solid #fff;
+  border: 1px solid #fff;
   background-color: #ababab;
 
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-  }
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
 
 .status__buttons-item:hover {
   transition: background-color 0.1s linear;
 
   background-color: #999;
-  }
+}
 
-  .status__buttons-item--active {
+.status__buttons-item--active {
   transition: background-color 0.1s linear;
 
-    background-color: #006e7f;
-  }
+  background-color: #006e7f;
+}
 
 .status__buttons-item--active:hover {
   transition: background-color 0.1s linear;
@@ -825,105 +825,105 @@ body {
   font-size: 0.875rem;
 }
 
-  .buttons-block {
-    display: flex;
-    flex-direction: row;
+.buttons-block {
+  display: flex;
+  flex-direction: row;
 
-    width: 100%;
+  width: 100%;
 
-    justify-content: center;
-  }
+  justify-content: center;
+}
 
-  .button {
-    max-width: 8rem;
-    margin-right: 0.25rem;
-    margin-left: 0.25rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+.button {
+  max-width: 8rem;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 
-    transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
 
-    color: #fff;
-    border: none;
-  }
+  color: #fff;
+  border: none;
+}
 
-  .button--cancel {
-    background-color: #dcdcdc;
+.button--cancel {
+  background-color: #dcdcdc;
 
-    flex: 1;
-  }
+  flex: 1;
+}
 
-  .button--cancel:hover {
-    transition: background-color 0.2s linear;
+.button--cancel:hover {
+  transition: background-color 0.2s linear;
 
-    background-color: #999;
-  }
+  background-color: #999;
+}
 
-  .button--cancel:active {
-    transition: background-color 0.2s linear;
+.button--cancel:active {
+  transition: background-color 0.2s linear;
 
-    background-color: #999;
-  }
+  background-color: #999;
+}
 
-  .button--save {
-    background-color: #006e7f;
+.button--save {
+  background-color: #006e7f;
 
-    flex:1;
-  }
+  flex: 1;
+}
 
-  .button--save:hover {
-    transition: background-color 0.2s linear;
+.button--save:hover {
+  transition: background-color 0.2s linear;
 
-    background: #0092a8;
-  }
+  background: #0092a8;
+}
 
-  .button-save:active {
-    transition: background-color 0.2s linear;
+.button-save:active {
+  transition: background-color 0.2s linear;
 
-    background: #0092a8;
-  }
+  background: #0092a8;
+}
 
-  .vacancy-form__fieldset {
-    display: flex;
-    flex-direction: column;
+.vacancy-form__fieldset {
+  display: flex;
+  flex-direction: column;
 
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 
-    color: #2f3234;
-    border: 1px solid #d3d3d3;
-    border-radius: 3px;
-    box-shadow: 0 0 2px #d3d3d3;
+  color: #2f3234;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  box-shadow: 0 0 2px #d3d3d3;
 
-    align-items: center;
-  }
+  align-items: center;
+}
 
-  .vacancy-form__comments {
-    margin-bottom: 2rem;
-  }
+.vacancy-form__comments {
+  margin-bottom: 2rem;
+}
 
-  .vacancy-form__comments-title {
-    font-size: 1.25rem;
-  }
+.vacancy-form__comments-title {
+  font-size: 1.25rem;
+}
 
-  .vacancy-form__comments-textarea {
-    box-sizing: border-box;
-    width: 100%;
+.vacancy-form__comments-textarea {
+  box-sizing: border-box;
+  width: 100%;
   max-width: 60.5rem;
-    max-height: 5rem;
-    padding: 0.475rem;
+  max-height: 5rem;
+  padding: 0.475rem;
 
-    resize: none;
+  resize: none;
 
-    color: #2f3234;
-    border: 1px solid #d3d3d3;
-    border-radius: 3px;
-    box-shadow: 0 0 2px #d3d3d3;
-  }
+  color: #2f3234;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  box-shadow: 0 0 2px #d3d3d3;
+}
 
 /* media  queries*/
 
 @media (min-width: 680px) {
-
+  
   .login-page-container {
     flex-direction: row;
 
@@ -984,5 +984,15 @@ body {
   .vacancy-form__fieldset {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .filters__buttons {
+    flex-direction: column;
+  }
+
+  .filters__buttons-item {
+    width: 100%;
   }
 }
