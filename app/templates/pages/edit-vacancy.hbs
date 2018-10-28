@@ -35,11 +35,11 @@
 
             <label for="status" class="vacancy-form__label vacancy-form__label--status">
               <p class="vacancy-form__text vacancy-form__text--status">Status</p>
-              <ul class="status-buttons">
-                {{>html/buttons-set-item class="status-buttons__item" title="Offer"}}
-                {{>html/buttons-set-item class="status-buttons__item" title="Candicate"}}
-                {{>html/buttons-set-item class="status-buttons__item status__buttons-item--long-text" title="Not Interested"}}
-                {{>html/buttons-set-item class="status-buttons__item" title="Decline"}}
+              <ul class="status__buttons">
+                {{>html/buttons-set-item class="status__buttons-item status__buttons-item--salary" linkClass="status__buttons-link" title="Offer"}}
+                {{>html/buttons-set-item class="status__buttons-item status__buttons-item--worktime" linkClass="status__buttons-link" title="Candidate"}}
+                {{>html/buttons-set-item class="status__buttons-item status__buttons-item--roadtime status__buttons-item--long-text" linkClass="status__buttons-link" title="Not Interested"}}
+                {{>html/buttons-set-item class="status__buttons-item status__buttons-item--roadtime" linkClass="status__buttons-link" title="Decline"}}
               </ul>
             </label>
           </div>
