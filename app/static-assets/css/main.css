@@ -948,6 +948,10 @@ body {
     display: block;
   }
 
+  .page-header__chart-link-block {
+    top: 0.3rem;
+  }
+
   .page-header__logout-link-text {
     display: block;
   }
