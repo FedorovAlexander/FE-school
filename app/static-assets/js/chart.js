@@ -123,6 +123,7 @@ fetch('../../rest/vacancies')
           if (!item.classList.contains('filters__buttons-item--active')) {
             chart.innerHTML = '';
             chart.innerHMTL = statusFilter();
+            superPag();
             colorStatus();
           }
         })
@@ -187,36 +188,44 @@ fetch('../../rest/vacancies')
       let paginator = document.querySelector(".paginator");
       let page = "";
       for (let i = 0; i < cnt_page; i++) {
-        page += "<span data-page=" + i * cnt + "  id=\"page" + (i + 1) + "\">" + (i + 1) + "</span>";
+        page += "<span class='paginator__item' data-page=" + i * cnt + "  id=\"page" + (i + 1) + "\">" + (i + 1) + "</span>";
       }
       paginator.innerHTML = page;
       div_num.forEach((item, i) => {
         if (i < cnt) {
           div_num[i].style.display = "flex";
         }
+        let main_page = document.getElementById("page1");
+        main_page.classList.add("paginator__item--active")
       })
     }
-    //листаем
+
+    function paginationActive() {
+      let pagItem = document.querySelectorAll('.paginator__item')
+      pagItem.forEach(item => {
+        item.addEventListener('click', () => {
+          pagItem.forEach(woof => {
+            woof.classList.remove('paginator__item--active')
+          })
+          item.classList.toggle('paginator__item--active')
+        })
+      })
+    }
+    paginationActive();
+
     function superPag() {
       let div_num = document.querySelectorAll(".position-badge");
-      let count = div_num.length; //всего записей
-      let cnt = 5; //сколько отображаем сначала
-      let cnt_page = Math.ceil(count / cnt); //кол-во страниц
+      let count = div_num.length;
+      let cnt = 5;
+      let cnt_page = Math.ceil(count / cnt);
       let main_page = document.getElementById("page1");
-      main_page.classList.add("paginator_active");
       let e = event || window.event;
       let target = e.target;
       let id = target.id;
-
       if (target.tagName.toLowerCase() != "span") return;
-
-      let num_ = id.substr(4);
       let data_page = +target.dataset.page;
-      main_page.classList.remove("paginator_active");
-      main_page = document.getElementById(id);
-      main_page.classList.add("paginator_active");
       let j = 0;
-      div_num.forEach((item,i) => {
+      div_num.forEach((item, i) => {
         let data_num = div_num[i].dataset.num;
         if (data_num <= data_page || data_num >= data_page)
           div_num[i].style.display = "none";
