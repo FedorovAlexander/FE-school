@@ -548,6 +548,14 @@ body {
   font-style: italic;
 }
 
+.edit-link__img {
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-right: 0.25rem;
+
+  fill: #a9a9a9;
+}
+
 .position-info__title-edit-block {
   display: flex;
   flex-direction: row;
@@ -561,14 +569,6 @@ body {
   color: #2f3234;
 
   flex: 4;
-}
-
-.edit-link__img {
-  width: 0.875rem;
-  height: 0.875rem;
-  margin-right: 0.25rem;
-
-  fill: #a9a9a9;
 }
 
 .position-info__company-link {
