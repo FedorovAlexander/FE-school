@@ -77,6 +77,8 @@ body {
   display: flex;
 
   padding-top: 7.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 
   text-align: center;
 
