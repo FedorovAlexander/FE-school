@@ -532,6 +532,7 @@ body {
   flex-direction: row;
 
   justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .paginator__item {
@@ -923,7 +924,7 @@ body {
 /* media  queries*/
 
 @media (min-width: 680px) {
-  
+
   .login-page-container {
     flex-direction: row;
 
