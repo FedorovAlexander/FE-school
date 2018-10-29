@@ -37,7 +37,6 @@ fetch('../../rest/vacancies')
       const positionLink = document.querySelectorAll('.position-badge__name');
       positionLink.forEach((link, index) => {
         link.addEventListener('click', (e) => {
-          e.preventDefault();
           let getName = db[index];
           sessionStorage.setItem('positionObj', JSON.stringify(getName))
           window.location.href = '/position';
@@ -59,7 +58,7 @@ fetch('../../rest/vacancies')
 
     // salary
 
-    function salaryFilter() {
+    function salaryFilter(e) {
       let badge = document.querySelectorAll(".position-badge");
       Array.prototype.map.call(badge, e => e.cloneNode(true))
         .sort((p, c) => Date.parse(p.dataset.salary) <= Date.parse(c.dataset.salary) ? 1 : -1)
@@ -90,23 +89,23 @@ fetch('../../rest/vacancies')
       companyLinkClick();
     }
 
-    function filtersActive() {
+    function filtersActive(e) {
       const filtersButton = document.querySelectorAll('.filters__buttons-item');
       const buttonSalary = document.querySelector('.filters__buttons-item--salary');
       const buttonRoadtime = document.querySelector('.filters__buttons-item--roadtime');
       const buttonWorktime = document.querySelector('.filters__buttons-item--worktime');
-      filtersButton.forEach((item) => {
-        item.addEventListener('click', () => {
-          item.classList.toggle('filters__buttons-item--active')
-          if (item.classList.contains('filters__buttons-item--salary')) {
+      filtersButton.forEach(function(item) {
+        item.addEventListener('click', function(e) {
+          this.classList.toggle('filters__buttons-item--active')
+          if (this.classList.contains('filters__buttons-item--salary')) {
             buttonRoadtime.classList.remove('filters__buttons-item--active')
             buttonWorktime.classList.remove('filters__buttons-item--active')
             salaryFilter();
-          } else if (item.classList.contains('filters__buttons-item--worktime')) {
+          } else if (this.classList.contains('filters__buttons-item--worktime')) {
             buttonRoadtime.classList.remove('filters__buttons-item--active')
             buttonSalary.classList.remove('filters__buttons-item--active')
             workHoursFilter();
-          } else if (item.classList.contains('filters__buttons-item--roadtime')) {
+          } else if (this.classList.contains('filters__buttons-item--roadtime')) {
             buttonSalary.classList.remove('filters__buttons-item--active')
             buttonWorktime.classList.remove('filters__buttons-item--active')
             roadTimeFilter();
@@ -116,14 +115,16 @@ fetch('../../rest/vacancies')
     }
     filtersActive();
 
-    function filtersInActive() {
+
+    function filtersInActive(e) {
       const filtersButton = document.querySelectorAll('.filters__buttons-item');
       filtersButton.forEach((item) => {
-        item.addEventListener('click', () => {
+        item.addEventListener('click', (e) => {
+          e.preventDefault()
           if (!item.classList.contains('filters__buttons-item--active')) {
             chart.innerHTML = '';
             chart.innerHMTL = statusFilter();
-            superPag();
+            superPag(e);
             colorStatus();
           }
         })
@@ -203,7 +204,7 @@ fetch('../../rest/vacancies')
     function paginationActive() {
       let pagItem = document.querySelectorAll('.paginator__item')
       pagItem.forEach(item => {
-        item.addEventListener('click', () => {
+        item.addEventListener('click', (e) => {
           pagItem.forEach(woof => {
             woof.classList.remove('paginator__item--active')
           })
@@ -213,14 +214,14 @@ fetch('../../rest/vacancies')
     }
     paginationActive();
 
-    function superPag() {
+    function superPag(e) {
       let div_num = document.querySelectorAll(".position-badge");
       let count = div_num.length;
       let cnt = 5;
       let cnt_page = Math.ceil(count / cnt);
       let main_page = document.getElementById("page1");
-      let e = event || window.event;
-      let target = e.target;
+      let event = e || window.event;
+      let target = event.target;
       let id = target.id;
       if (target.tagName.toLowerCase() != "span") return;
       let data_page = +target.dataset.page;
@@ -238,10 +239,11 @@ fetch('../../rest/vacancies')
       }
     }
 
-    function paginatorClick() {
+    function paginatorClick(e) {
       let pag = document.querySelector('.paginator')
-      pag.addEventListener('click', () => {
-        superPag()
+      pag.addEventListener('click', (e) => {
+        superPag(e)
+        paginationActive(e);
       })
     }
   })
