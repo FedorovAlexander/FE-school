@@ -885,8 +885,6 @@ body {
 }
 
 .vacancy-form__fieldset {
-  display: flex;
-  flex-direction: column;
 
   padding-bottom: 2rem;
 
