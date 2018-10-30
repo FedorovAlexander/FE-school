@@ -947,6 +947,18 @@ body {
   box-shadow: 0 0 2px #d3d3d3;
 }
 
+.nyan {
+  position: absolute;
+  top: 200px;
+  left: -370px;
+  z-index: 100;
+  transition: left 5s linear;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 /* media  queries*/
 
 @media (min-width: 680px) {
@@ -1018,7 +1030,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
+  }
 
   .company-img {
     display: block;
