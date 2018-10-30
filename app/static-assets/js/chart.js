@@ -88,20 +88,29 @@ fetch('../../rest/vacancies')
       const buttonSalary = document.querySelector('.filters__buttons-item--salary');
       const buttonRoadtime = document.querySelector('.filters__buttons-item--roadtime');
       const buttonWorktime = document.querySelector('.filters__buttons-item--worktime');
+      const buttonStatus = document.querySelector('.filters__buttons-item--status');
       filtersButton.forEach(function(item) {
         item.addEventListener('click', function(e) {
           this.classList.toggle('filters__buttons-item--active')
           if (this.classList.contains('filters__buttons-item--salary')) {
             buttonRoadtime.classList.remove('filters__buttons-item--active')
             buttonWorktime.classList.remove('filters__buttons-item--active')
+            buttonStatus.classList.remove('filters__buttons-item--active')
             // salaryFilter();
           } else if (this.classList.contains('filters__buttons-item--worktime')) {
             buttonRoadtime.classList.remove('filters__buttons-item--active')
             buttonSalary.classList.remove('filters__buttons-item--active')
+            buttonStatus.classList.remove('filters__buttons-item--active')
             // workHoursFilter();
           } else if (this.classList.contains('filters__buttons-item--roadtime')) {
             buttonSalary.classList.remove('filters__buttons-item--active')
             buttonWorktime.classList.remove('filters__buttons-item--active')
+            buttonStatus.classList.remove('filters__buttons-item--active')
+            // roadTimeFilter();
+          } else if (this.classList.contains('filters__buttons-item--status')) {
+            buttonSalary.classList.remove('filters__buttons-item--active')
+            buttonWorktime.classList.remove('filters__buttons-item--active')
+            buttonRoadtime.classList.remove('filters__buttons-item--active')
             // roadTimeFilter();
           }
         })
