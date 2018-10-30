@@ -235,6 +235,29 @@ body {
   font-size: 1.1rem;
 }
 
+.page-header__img {
+  padding-top: 0.12rem;
+}
+
+.page-header__img svg rect:hover:nth-child(1) {
+  height: 150px;
+}
+
+#bar1 {
+  width:117.8px;
+  height: 490px;
+}
+
+#bar2 {
+  width:117.8px;
+  height: 490px;
+}
+
+#bar3 {
+  width:117.8px;
+  height: 407.6px;
+}
+
 .page-header__chart-link-text {
   display: none;
 
@@ -475,6 +498,11 @@ body {
   box-shadow: 0 0 2px #d3d3d3;
 
   justify-content: space-between;
+  transition: all 0.2s;
+}
+
+.position-badge:hover {
+  transform: scale(1.01);
 }
 
 .position-badge__name {
@@ -958,6 +986,7 @@ body {
   .page-header__img {
     position: absolute;
     left: -0.75rem;
+    padding-top: 0;
   }
 
   .chart {
