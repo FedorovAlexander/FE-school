@@ -716,6 +716,10 @@ body {
   color: #2f3234;
 }
 
+.company-img {
+  display: none;
+}
+
 /* add vacancy page */
 
 .add-vacancy {
