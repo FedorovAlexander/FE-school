@@ -19,7 +19,8 @@ fetch('../../rest/vacancies')
       name.innerText = posObj.position;
       company.innerText = posObj.companyName;
       companyDesc.innerText = posObj.description;
-      salary.innerText = posObj.salary;
+      salary.innerText = posObj.salary + "/year";
+
 
       if (posObj.minutes < 60) {
         worktime.innerText = posObj.minutes + ' minutes';
