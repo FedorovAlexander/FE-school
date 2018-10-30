@@ -240,4 +240,14 @@ fetch('../../rest/vacancies')
         paginationActive(e);
       })
     }
+    function nyanIn() {
+      const nyan = document.querySelector('.nyan')
+      nyan.style.left = '1500px'
+    }
+
+    document.onkeydown = function(e) {
+      if (e.keyCode === 33) {
+        nyanIn();
+      }
+    }
   })
