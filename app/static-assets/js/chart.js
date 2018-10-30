@@ -5,10 +5,7 @@ fetch('../../rest/vacancies')
     const chart = document.querySelector('.positions-block');
 
     function statusFilter() {
-      createPositionWithStatus('offer')
-      createPositionWithStatus('candidate')
-      createPositionWithStatus('denied')
-      createPositionWithStatus('not interested')
+      createPositionWithStatus()
       setNumAttribute()
       positionLinkClick();
       companyLinkClick();
@@ -17,11 +14,8 @@ fetch('../../rest/vacancies')
     }
     statusFilter();
 
-    function createPositionWithStatus(status) {
-      let filter = db.filter(woof => {
-        return woof.status === status;
-      })
-      filter.forEach(item => {
+    function createPositionWithStatus() {
+      db.forEach(item => {
         chart.innerHTML +=
           '<div class="position-badge" data-road="' + item.roadTime + '" data-minutes="' + item.minutes + '" data-salary="' + item.salary + '" data-status="' + item.status + '">' +
           '<div class="postion-badge__links">' +
@@ -56,38 +50,38 @@ fetch('../../rest/vacancies')
       })
     }
 
-    // salary
-
-    function salaryFilter(e) {
-      let badge = document.querySelectorAll(".position-badge");
-      Array.prototype.map.call(badge, e => e.cloneNode(true))
-        .sort((p, c) => Date.parse(p.dataset.salary) <= Date.parse(c.dataset.salary) ? 1 : -1)
-        .forEach((e, i) => badge[i].parentNode.replaceChild(e, badge[i]));
-      positionLinkClick();
-      companyLinkClick();
-
-    }
-    // worktime
-
-    function workHoursFilter() {
-      let badge = document.querySelectorAll(".position-badge");
-      Array.prototype.map.call(badge, e => e.cloneNode(true))
-        .sort((p, c) => Date.parse(p.dataset.minutes) <= Date.parse(c.dataset.minutes) ? 1 : -1)
-        .forEach((e, i) => badge[i].parentNode.replaceChild(e, badge[i]));
-      positionLinkClick();
-      companyLinkClick();
-    }
-
-    // roadTime
-
-    function roadTimeFilter() {
-      let badge = document.querySelectorAll(".position-badge");
-      Array.prototype.map.call(badge, e => e.cloneNode(true))
-        .sort((p, c) => Date.parse(p.dataset.road) <= Date.parse(c.dataset.road) ? 1 : -1)
-        .forEach((e, i) => badge[i].parentNode.replaceChild(e, badge[i]));
-      positionLinkClick();
-      companyLinkClick();
-    }
+    // // salary
+    //
+    // function salaryFilter(e) {
+    //   let badge = document.querySelectorAll(".position-badge");
+    //   Array.prototype.map.call(badge, e => e.cloneNode(true))
+    //     .sort((p, c) => Date.parse(p.dataset.salary) <= Date.parse(c.dataset.salary) ? 1 : -1)
+    //     .forEach((e, i) => badge[i].parentNode.replaceChild(e, badge[i]));
+    //   positionLinkClick();
+    //   companyLinkClick();
+    //
+    // }
+    // // worktime
+    //
+    // function workHoursFilter() {
+    //   let badge = document.querySelectorAll(".position-badge");
+    //   Array.prototype.map.call(badge, e => e.cloneNode(true))
+    //     .sort((p, c) => Date.parse(p.dataset.minutes) <= Date.parse(c.dataset.minutes) ? 1 : -1)
+    //     .forEach((e, i) => badge[i].parentNode.replaceChild(e, badge[i]));
+    //   positionLinkClick();
+    //   companyLinkClick();
+    // }
+    //
+    // // roadTime
+    //
+    // function roadTimeFilter() {
+    //   let badge = document.querySelectorAll(".position-badge");
+    //   Array.prototype.map.call(badge, e => e.cloneNode(true))
+    //     .sort((p, c) => Date.parse(p.dataset.road) <= Date.parse(c.dataset.road) ? 1 : -1)
+    //     .forEach((e, i) => badge[i].parentNode.replaceChild(e, badge[i]));
+    //   positionLinkClick();
+    //   companyLinkClick();
+    // }
 
     function filtersActive(e) {
       const filtersButton = document.querySelectorAll('.filters__buttons-item');
@@ -100,15 +94,15 @@ fetch('../../rest/vacancies')
           if (this.classList.contains('filters__buttons-item--salary')) {
             buttonRoadtime.classList.remove('filters__buttons-item--active')
             buttonWorktime.classList.remove('filters__buttons-item--active')
-            salaryFilter();
+            // salaryFilter();
           } else if (this.classList.contains('filters__buttons-item--worktime')) {
             buttonRoadtime.classList.remove('filters__buttons-item--active')
             buttonSalary.classList.remove('filters__buttons-item--active')
-            workHoursFilter();
+            // workHoursFilter();
           } else if (this.classList.contains('filters__buttons-item--roadtime')) {
             buttonSalary.classList.remove('filters__buttons-item--active')
             buttonWorktime.classList.remove('filters__buttons-item--active')
-            roadTimeFilter();
+            // roadTimeFilter();
           }
         })
       })
