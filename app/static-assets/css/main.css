@@ -1013,6 +1013,17 @@ body {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
   }
+
+  .company-info__desc-img-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+  .company-img {
+    display: block;
+    margin-left: 2rem;
+  }
 }
 
 @media (max-width: 480px) {
