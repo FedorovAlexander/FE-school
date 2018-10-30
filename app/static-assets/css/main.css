@@ -367,12 +367,10 @@ body {
 }
 
 .filters__buttons-item {
-  display: flex;
-  flex-direction: row;
-
-  width: 19%;
+  width: 49.3%;
   min-width: 6rem;
   min-height: 2.375rem;
+  margin-bottom: 0.0675rem;
 
   list-style: none;
 
@@ -385,7 +383,7 @@ body {
 
   justify-content: center;
   align-items: center;
-  flex: 1;
+
 }
 
 .filters__buttons-item:hover {
@@ -961,7 +959,7 @@ body {
 
 /* media  queries*/
 
-@media (min-width: 680px) {
+@media (min-width: 720px) {
 
   .login-page-container {
     flex-direction: row;
@@ -1036,14 +1034,11 @@ body {
     display: block;
     margin-left: 2rem;
   }
+
+  .filters__buttons-item {
+    width: 24.7%;
+  }
 }
 
 @media (max-width: 480px) {
-  .filters__buttons {
-    flex-direction: column;
-  }
-
-  .filters__buttons-item {
-    width: 100%;
-  }
 }
