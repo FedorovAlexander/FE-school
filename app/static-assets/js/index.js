@@ -29,3 +29,15 @@ function changeBarIcon() {
   })
 }
 changeBarIcon()
+
+function changeLogIcon() {
+  let logoutLink = document.querySelector('.page-header__logout-link');
+  let logoutIcon = document.querySelector('.page-header__logout-img')
+  logoutLink.addEventListener('mouseenter', function() {
+    logoutIcon.style.transform = 'scale(1.1)'
+  })
+  logoutLink.addEventListener('mouseleave', function() {
+    logoutIcon.style.transform = 'scale(1)'
+  })
+}
+changeLogIcon();

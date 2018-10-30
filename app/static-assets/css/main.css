@@ -239,10 +239,6 @@ body {
   padding-top: 0.12rem;
 }
 
-.page-header__img svg rect:hover:nth-child(1) {
-  height: 150px;
-}
-
 #bar1 {
   width:117.8px;
   height: 490px;
