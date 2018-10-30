@@ -9,7 +9,8 @@
     "requiresEducation": true,
     "comment": "test",
     "status": "candidate",
-    "index": 1
+    "index": 1,
+    "imgLink": "./static-assets/img/umbrella.png"
   },
   {
     "companyName": "Umbrella Corp",
@@ -22,7 +23,8 @@
     "requiresEducation": false,
     "comment": "test",
     "status": "not interested",
-    "index": 2
+    "index": 2,
+    "imgLink": "/static-assets/img/umbrella.png"
   },
   {
     "companyName": "Umbrella Corp",
@@ -35,46 +37,50 @@
     "requiresEducation": true,
     "comment": "test",
     "status": "denied",
-    "index": 3
+    "index": 3,
+    "imgLink": "/static-assets/img/umbrella.png"
   },
   {
-    "companyName": "ACME Corp",
-    "description": "A Company Manufacturing Everything.",
-    "position": "Tennis Ball Bomb Maker",
-    "salary": 80000,
-    "minutes": 540,
-    "roadTime": 60,
+    "companyName": "Justice League",
+    "description": "The initial Justice League lineup included seven of DC Comics' superheroes who were regularly published at that time: Superman, Batman, Aquaman, Flash, Green Lantern, Martian Manhunter, and Wonder Woman.",
+    "position": "Aquaman (sucks)",
+    "salary": 1000,
+    "minutes": 420,
+    "roadTime": 70,
     "interesting": false,
-    "requiresEducation": false,
-    "comment": "test",
-    "status": "offer",
-    "index": 4
+    "requiresEducation": true,
+    "comment": "Aquaman sucks!",
+    "status": "not interested",
+    "index": 9,
+    "imgLink": "/static-assets/img/justice-league.jpg"
   },
   {
-    "companyName": "ACME Corp",
-    "description": "A Company Manufacturing Everything.",
-    "position": "Rocket Scientist",
-    "salary": 250000,
-    "minutes": 540,
-    "roadTime": 65,
+    "companyName": "Justice League",
+    "description": "The initial Justice League lineup included seven of DC Comics' superheroes who were regularly published at that time: Superman, Batman, Aquaman, Flash, Green Lantern, Martian Manhunter, and Wonder Woman.",
+    "position": "Batman",
+    "salary": 1100000,
+    "minutes": 680,
+    "roadTime": 5,
     "interesting": true,
     "requiresEducation": true,
-    "comment": "test",
-    "status": "candidate",
-    "index": 5
+    "comment": "Cool",
+    "status": "offer",
+    "index": 10,
+    "imgLink": "/static-assets/img/justice-league.jpg"
   },
   {
-    "companyName": "ACME Corp",
-    "description": "A Company Manufacturing Everything.",
-    "position": "Wile E. Coyote Personal Doctor",
+    "companyName": "Justice League",
+    "description": "The initial Justice League lineup included seven of DC Comics' superheroes who were regularly published at that time: Superman, Batman, Aquaman, Flash, Green Lantern, Martian Manhunter, and Wonder Woman.",
+    "position": "Superman",
     "salary": 60000,
     "minutes": 420,
     "roadTime": 70,
     "interesting": false,
     "requiresEducation": true,
-    "comment": "test",
-    "status": "not interested",
-    "index": 6
+    "comment": "don't like underpants over leotards",
+    "status": "offer",
+    "index": 6,
+    "imgLink": "/static-assets/img/justice-league.jpg"
   },
   {
     "companyName": "Tyrell Corp",
@@ -87,7 +93,8 @@
     "requiresEducation": false,
     "comment": "test",
     "status": "offer",
-    "index": 7
+    "index": 7,
+    "imgLink": "/static-assets/img/tyrell.jpg"
   },
   {
     "companyName": "Tyrell Corp",
@@ -100,6 +107,49 @@
     "requiresEducation": false,
     "comment": "test",
     "status": "denied",
-    "index": 8
+    "index": 8,
+    "imgLink": "/static-assets/img/tyrell.jpg"
+  },
+  {
+    "companyName": "ACME Corp",
+    "description": "A Company Manufacturing Everything.",
+    "position": "Tennis Ball Bomb Maker",
+    "salary": 80000,
+    "minutes": 540,
+    "roadTime": 60,
+    "interesting": false,
+    "requiresEducation": false,
+    "comment": "test",
+    "status": "offer",
+    "index": 4,
+    "imgLink": "/static-assets/img/Acme.png"
+  },
+  {
+    "companyName": "ACME Corp",
+    "description": "A Company Manufacturing Everything.",
+    "position": "Rocket Scientist",
+    "salary": 250000,
+    "minutes": 540,
+    "roadTime": 65,
+    "interesting": true,
+    "requiresEducation": true,
+    "comment": "test",
+    "status": "candidate",
+    "index": 5,
+    "imgLink": "/static-assets/img/Acme.png"
+  },
+  {
+    "companyName": "ACME Corp",
+    "description": "A Company Manufacturing Everything.",
+    "position": "Wile E. Coyote Personal Doctor",
+    "salary": 60000,
+    "minutes": 420,
+    "roadTime": 70,
+    "interesting": false,
+    "requiresEducation": true,
+    "comment": "test",
+    "status": "not interested",
+    "index": 6,
+    "imgLink": "/static-assets/img/Acme.png"
   }
 ]
