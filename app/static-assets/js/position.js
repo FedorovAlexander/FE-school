@@ -2,8 +2,6 @@ fetch('../../rest/vacancies')
   .then(res => res.json())
   .then(data => db = data)
   .then(() => {
-
-    window.onload = showPosition();
     function showPosition() {
       const name = document.querySelector('.position-info__title');
       const company = document.querySelector('.position-info__company-link');
@@ -15,36 +13,35 @@ fetch('../../rest/vacancies')
       const education = document.querySelector('.conditions__list-item--education .conditions__list-item-value');
       const status = document.querySelector('.conditions__list-item--status .conditions__list-item-value');
       const comments = document.querySelector('.comments');
-      let posObj = JSON.parse(sessionStorage.getItem('positionObj'));
+      const posObj = JSON.parse(sessionStorage.getItem('positionObj'));
       name.innerText = posObj.position;
       company.innerText = posObj.companyName;
       companyDesc.innerText = posObj.description;
-      salary.innerText = posObj.salary + "/year";
+      salary.innerText = `${posObj.salary}/year`;
 
 
       if (posObj.minutes < 60) {
-        worktime.innerText = posObj.minutes + ' minutes';
+        worktime.innerText = `${posObj.minutes} minutes`;
       } else {
-        worktime.innerText = Math.floor(posObj.minutes / 60) + ' hours ' + (posObj.minutes % 60) + ' minutes';
+        worktime.innerText = `${Math.floor(posObj.minutes / 60)} hours ${posObj.minutes % 60} minutes`;
       }
 
-      roadtime.innerText = posObj.roadTime + ' minutes';
+      roadtime.innerText = `${posObj.roadTime} minutes`;
 
       if (posObj.interesting === true) {
         interesting.innerText = 'Yes';
       } else {
         interesting.innerText = 'No';
-      };
+      }
 
       if (posObj.requiresEducation === true) {
         education.innerText = 'Requires';
       } else {
         education.innerText = 'No';
-      };
+      }
       status.innerText = posObj.status;
 
-      comments.innerHTML += '<p class="comments__text">' + posObj.comment + '</p>';
-
+      comments.innerHTML += `<p class="comments__text">${posObj.comment}</p>`;
     }
-
-  })
+    window.onload = showPosition();
+  });
